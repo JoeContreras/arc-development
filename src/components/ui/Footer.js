@@ -60,7 +60,11 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer}>
       <Hidden mdDown>
-        <Grid container justify="center" className={classes.mainContainer}>
+        <Grid
+          container
+          justifyContent="center"
+          className={classes.mainContainer}
+        >
           <Grid item className={classes.gridItem}>
             <Grid container direction="column" spacing={2}>
               <Grid
@@ -112,7 +116,7 @@ export default function Footer(props) {
                   setSelectedIndex(2);
                 }}
               >
-                Mobile App Development
+                iOS/Android App Development
               </Grid>
               <Grid
                 item

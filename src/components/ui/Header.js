@@ -56,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "50px",
     marginRight: "50px",
     height: "45px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+    },
   },
   menu: {
     backgroundColor: theme.palette.common.blue,
@@ -152,7 +155,7 @@ export default function Header(props) {
         selectedIndex: 1,
       },
       {
-        name: "Mobile App Development",
+        name: "iOS/Android App Development",
         link: "/mobileapps",
         activeIndex: 1,
         selectedIndex: 2,
@@ -194,6 +197,9 @@ export default function Header(props) {
             }
           }
           break;
+        case "/estimate":
+          setValue(8);
+          break;
         default:
           break;
       }
@@ -229,7 +235,14 @@ export default function Header(props) {
           />
         ))}
       </Tabs>
-      <Button variant="contained" color="secondary" className={classes.button}>
+      <Button
+        component={Link}
+        to="/estimate"
+        variant="contained"
+        color="secondary"
+        className={classes.button}
+        onClick={() => setValue(8)}
+      >
         Free Estimate
       </Button>
       <Menu
