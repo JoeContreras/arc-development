@@ -6,6 +6,12 @@ import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
 import Services from "./Services";
+import CustomSoftware from "./CustomSoftware";
+import MobileApps from "./MobileApps";
+import Websites from "./Websites";
+import Revolution from "./Revolution";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -45,17 +51,69 @@ function App() {
           <Route
             exact
             path="/customsoftware"
-            component={() => <div>customsoftware</div>}
+            render={(props) => (
+              <CustomSoftware
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
           />
-          <Route exact path="/mobileapps" component={() => <div>mobile</div>} />
-          <Route exact path="/websites" component={() => <div>Websites</div>} />
+          <Route
+            exact
+            path="/mobileapps"
+            render={(props) => (
+              <MobileApps
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/websites"
+            render={(props) => (
+              <Websites
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
+          />
           <Route
             exact
             path="/revolution"
-            component={() => <div>revolution</div>}
+            render={(props) => (
+              <Revolution
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
           />
-          <Route exact path="/about" component={() => <div>About</div>} />
-          <Route exact path="/contact" component={() => <div>Contact</div>} />
+          <Route
+            exact
+            path="/about"
+            render={(props) => (
+              <About
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/contact"
+            render={(props) => (
+              <Contact
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
+          />
           <Route exact path="/estimate" component={() => <div>estimate</div>} />
         </Switch>
         <Footer

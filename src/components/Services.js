@@ -47,7 +47,6 @@ const Services = (props) => {
   const classes = useStyles();
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
-  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
   const { setValue, setSelectedIndex } = props;
 
   return (
