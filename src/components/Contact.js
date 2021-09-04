@@ -262,12 +262,7 @@ const Contact = (props) => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid
-              item
-              container
-              style={{ maxWidth: "20em" }}
-              direction="column"
-            >
+            <Grid item container style={{ width: "20em" }} direction="column">
               <Grid item style={{ marginBottom: "0.5em" }}>
                 <TextField
                   label="Name"
@@ -303,7 +298,7 @@ const Contact = (props) => {
                 />
               </Grid>
             </Grid>
-            <Grid item style={{ maxWidth: "20em" }}>
+            <Grid item style={{ width: "20em" }}>
               <TextField
                 id="message"
                 name="message"
@@ -348,7 +343,7 @@ const Contact = (props) => {
       </Grid>
 
       <Dialog
-        fullScreen={matchesXS}
+        fullScreen={matchesSM}
         style={{ zIndex: 1302 }}
         open={open}
         onClose={() => setOpen(false)}
@@ -416,7 +411,7 @@ const Contact = (props) => {
               />
             </Grid>
           </Grid>
-          <Grid item style={{ maxWidth: matchesXS ? "100%" : "20em" }}>
+          <Grid item style={{ width: matchesSM ? "100%" : "20em" }}>
             <TextField
               id="message"
               name="message"
