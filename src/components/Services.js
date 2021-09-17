@@ -7,6 +7,7 @@ import customSoftwareIcon from "../assets/Custom_Software_Icon.svg";
 import mobileappsIcon from "../assets/mobileIcon.svg";
 import websitesIcon from "../assets/websiteIcon.svg";
 import { useTheme } from "@material-ui/core/styles";
+import CallToAction from "./ui/CallToAction";
 
 const useStyles = makeStyles((theme) => ({
   specialText: {
@@ -224,6 +225,7 @@ const Services = (props) => {
           </Grid>
         </Grid>
       </Grid>
+      <CallToAction setValue={setValue} />
     </Grid>
   );
 };
