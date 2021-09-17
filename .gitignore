@@ -31,3 +31,5 @@ yarn-error.log*
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
 /server/
+/.idea/codestream.xml
+/.idea/codeStyles/codeStyleConfig.xml
