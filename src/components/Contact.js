@@ -150,7 +150,7 @@ const Contact = (props) => {
     // e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/contact", {
+      await axios.post("http://localhost:5000/contact", {
         name,
         email,
         phone,
@@ -465,7 +465,7 @@ const Contact = (props) => {
         open={alert.open}
         message={alert.message}
         ContentProps={{ style: { backgroundColor: alert.backgroundColor } }}
-        anchorOrigin={{ vertical: "Top", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         onClose={() => setAlert({ ...alert, open: false })}
         autoHideDuration={4000}
       />

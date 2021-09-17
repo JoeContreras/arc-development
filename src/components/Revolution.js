@@ -198,7 +198,6 @@ export default function Revolution(props) {
         >
           <Lottie
             options={defaultOptions}
-            isStopped={true}
             style={{ maxWidth: "40em", margin: "0" }}
           />
         </Grid>

@@ -161,11 +161,7 @@ const MobileApps = (props) => {
           </Grid>
         </Grid>
         <Grid item md>
-          <Lottie
-            options={defaultOptions}
-            isStopped={true}
-            style={{ maxWidth: "20em" }}
-          />
+          <Lottie options={defaultOptions} style={{ maxWidth: "20em" }} />
         </Grid>
 
         <Grid

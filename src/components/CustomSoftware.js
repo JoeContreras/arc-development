@@ -53,7 +53,7 @@ const CustomSoftware = (props) => {
 
   const documentOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: documentsAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -62,7 +62,7 @@ const CustomSoftware = (props) => {
 
   const scaleOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: scaleAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -71,7 +71,7 @@ const CustomSoftware = (props) => {
 
   const automationOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: autmationAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -80,7 +80,7 @@ const CustomSoftware = (props) => {
 
   const uxOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: uxAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -284,7 +284,6 @@ const CustomSoftware = (props) => {
           <Grid item md>
             <Lottie
               options={documentOptions}
-              isStopped={true}
               style={{ maxHeight: 275, maxWidth: 275, minHeight: 250 }}
             />
           </Grid>
@@ -299,7 +298,6 @@ const CustomSoftware = (props) => {
           <Grid item md>
             <Lottie
               options={scaleOptions}
-              isStopped={true}
               style={{
                 maxHeight: 260,
                 maxWidth: 280,
@@ -338,7 +336,7 @@ const CustomSoftware = (props) => {
         style={{ marginBottom: "20em", marginTop: "20em" }}
       >
         <Grid item container direction="column" alignItems="center">
-          <Grid item gutterBottom>
+          <Grid item>
             <img
               src={root}
               alt="tree roots"
@@ -414,7 +412,6 @@ const CustomSoftware = (props) => {
           <Grid item md>
             <Lottie
               options={automationOptions}
-              isStopped={true}
               style={{
                 maxHeight: 290,
                 maxWidth: 280,
@@ -434,7 +431,6 @@ const CustomSoftware = (props) => {
           <Grid item md>
             <Lottie
               options={uxOptions}
-              isStopped={true}
               style={{
                 maxHeight: 310,
                 maxWidth: 155,

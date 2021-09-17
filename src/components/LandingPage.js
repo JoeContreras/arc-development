@@ -134,7 +134,7 @@ export default function LandingPage(props) {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -192,8 +192,7 @@ export default function LandingPage(props) {
             </Grid>
           </Grid>
           <Grid sm item className={classes.animation}>
-            {/*<Lottie options={defaultOptions} height={"100%"} width={"100%"} />*/}
-            dfd
+            <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
           </Grid>
         </Grid>
       </Grid>

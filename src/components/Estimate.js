@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import {
   Button,
+  CircularProgress,
   Dialog,
   DialogContent,
   Grid,
   Hidden,
   IconButton,
   makeStyles,
+  Snackbar,
   TextField,
   Typography,
   useMediaQuery,
@@ -341,15 +343,6 @@ const initialError = {
   phoneError: "",
 };
 
-const initialAnswers = {
-  service: [],
-  platforms: [],
-  features: [],
-  customFeatures: "",
-  category: "",
-  users: "",
-};
-
 const Estimate = () => {
   const theme = useTheme();
   const classes = useStyles();
@@ -361,8 +354,7 @@ const Estimate = () => {
   const { name, phone, email, message } = contact;
   const [error, setError] = useState(initialError);
   const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [answers, setAnswers] = useState(initialAnswers);
+  // const [answers, setAnswers] = useState(initialAnswers);
 
   const [total, setTotal] = useState(0);
   const [service, setService] = useState("");
@@ -380,7 +372,6 @@ const Estimate = () => {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
     animationData: estimateAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -669,13 +660,13 @@ const Estimate = () => {
       });
 
       setLoading(false);
-      setOpen(false);
       setContact(initialState);
       setAlert({
         open: true,
-        message: "Message sent successfully",
+        message: "Estimate sent successfully",
         backgroundColor: "#4BB543",
       });
+      setDialogOpen(false);
       console.log(res.data);
     } catch (e) {
       console.log(e);
@@ -771,6 +762,31 @@ const Estimate = () => {
     }
   };
 */
+
+  const estimateDisabled = () => {
+    let disabled = true;
+
+    const emptySelections = questions
+      .map((question) => question.options.filter((option) => option.selected))
+      .filter((question) => question.length === 0);
+
+    if (questions.length === 2) {
+      if (emptySelections.length === 1) {
+        disabled = false;
+      }
+    } else if (questions.length === 1) {
+      disabled = true;
+    } else if (
+      emptySelections.length < 3 &&
+      questions[questions.length - 1].options.filter(
+        (option) => option.selected
+      ).length > 0
+    ) {
+      disabled = false;
+    }
+    return disabled;
+  };
+
   const softwareSelection = (
     <Grid container direction="column">
       <Grid
@@ -910,12 +926,7 @@ const Estimate = () => {
             marginTop: "7.5em",
           }}
         >
-          <Lottie
-            options={defaultOptions}
-            height="100%"
-            width="100%"
-            isPaused={true}
-          />
+          <Lottie options={defaultOptions} height="100%" width="100%" />
         </Grid>
       </Grid>
       <Grid
@@ -929,7 +940,7 @@ const Estimate = () => {
         {questions
           .filter((question) => question.active)
           .map((question, index) => (
-            <React.Fragment>
+            <React.Fragment key={index}>
               <Grid item align="center">
                 <Typography
                   variant="h2"
@@ -952,8 +963,9 @@ const Estimate = () => {
                 </Typography>
               </Grid>
               <Grid item container>
-                {question.options.map((option) => (
+                {question.options.map((option, index) => (
                   <Grid
+                    key={index}
                     item
                     container
                     direction="column"
@@ -1025,6 +1037,7 @@ const Estimate = () => {
           <Button
             variant="contained"
             className={classes.estimateButton}
+            disabled={estimateDisabled()}
             onClick={() => {
               setDialogOpen(true);
               getTotal();
@@ -1110,6 +1123,7 @@ const Estimate = () => {
                   onChange={handleChangeInput}
                   fullWidth
                   multiline
+                  placeholder="Tell us more about your project."
                   rows={10}
                   className={classes.message}
                   InputProps={{ disableUnderline: true }}
@@ -1144,16 +1158,30 @@ const Estimate = () => {
 
               <Grid item>
                 <Button
+                  disabled={
+                    name.length === 0 ||
+                    email.length === 0 ||
+                    phone.length === 0 ||
+                    message.length === 0 ||
+                    emailError.length !== 0 ||
+                    phoneError.length !== 0
+                  }
                   variant="contained"
                   className={classes.estimateButton}
                   onClick={sendEstimate}
                 >
-                  Place Request
-                  <img
-                    src={send}
-                    alt="paper airplane"
-                    style={{ marginLeft: "0.5em" }}
-                  />
+                  {loading ? (
+                    <CircularProgress />
+                  ) : (
+                    <>
+                      Place Request
+                      <img
+                        src={send}
+                        alt="paper airplane"
+                        style={{ marginLeft: "0.5em" }}
+                      />
+                    </>
+                  )}
                 </Button>
               </Grid>
               <Hidden mdUp>
@@ -1179,6 +1207,15 @@ const Estimate = () => {
           </Grid>
         </DialogContent>
       </Dialog>
+
+      <Snackbar
+        open={alert.open}
+        message={alert.message}
+        ContentProps={{ style: { backgroundColor: alert.backgroundColor } }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        onClose={() => setAlert({ ...alert, open: false })}
+        autoHideDuration={4000}
+      />
     </Grid>
   );
 };
