@@ -150,7 +150,7 @@ const Contact = (props) => {
     // e.preventDefault();
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/contact", {
+      await axios.post("https://arc-dev-backend.herokuapp.com/contact", {
         name,
         email,
         phone,

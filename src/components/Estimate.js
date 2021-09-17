@@ -645,19 +645,22 @@ const Estimate = () => {
   const sendEstimate = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/estimate", {
-        name,
-        email,
-        phone,
-        message,
-        total,
-        category,
-        service,
-        platforms,
-        features,
-        customFeatures,
-        users,
-      });
+      const res = await axios.post(
+        "https://arc-dev-backend.herokuapp.com/estimate",
+        {
+          name,
+          email,
+          phone,
+          message,
+          total,
+          category,
+          service,
+          platforms,
+          features,
+          customFeatures,
+          users,
+        }
+      );
 
       setLoading(false);
       setContact(initialState);
