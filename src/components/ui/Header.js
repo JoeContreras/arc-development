@@ -6,7 +6,6 @@ import {
   Toolbar,
   useScrollTrigger,
   Button,
-  Menu,
   MenuItem,
   useMediaQuery,
   useTheme,
