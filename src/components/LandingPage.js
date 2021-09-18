@@ -125,6 +125,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
 }));
+
 export default function LandingPage(props) {
   const classes = useStyles();
   const theme = useTheme();
