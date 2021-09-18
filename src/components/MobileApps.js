@@ -73,7 +73,7 @@ const MobileApps = (props) => {
               component={Link}
               to="/customsoftware"
               onClick={() => {
-                setSelectedIndex(1);
+                setSelectedIndex(0);
               }}
             >
               <img src={backArrow} alt="Back to custom software" />
@@ -120,7 +120,7 @@ const MobileApps = (props) => {
               component={Link}
               to="/websites"
               onClick={() => {
-                setSelectedIndex(3);
+                setSelectedIndex(2);
               }}
             >
               <img src={forwardArrow} alt="Forward to websites Development" />

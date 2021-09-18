@@ -68,7 +68,7 @@ export default function Websites(props) {
               component={Link}
               to="/mobileapps"
               onClick={() => {
-                setSelectedIndex(2);
+                setSelectedIndex(1);
               }}
             >
               <img src={backArrow} alt="Back to Mobile Development" />
@@ -85,7 +85,7 @@ export default function Websites(props) {
         >
           <Grid item>
             <Typography variant="h2" gutterBottom>
-              Custom Software Development
+              Website Development
             </Typography>
           </Grid>
           <Grid item>
@@ -109,7 +109,7 @@ export default function Websites(props) {
               component={Link}
               to="/services"
               onClick={() => {
-                setSelectedIndex(0);
+                setValue(1);
               }}
             >
               <img src={forwardArrow} alt="Forward to services" />

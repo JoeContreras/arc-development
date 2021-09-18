@@ -15,6 +15,11 @@ import {
   ListItem,
   ListItemText,
   List,
+  Popper,
+  Grow,
+  Paper,
+  ClickAwayListener,
+  MenuList,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import logo from "../../assets/logo.svg";
@@ -63,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
   menu: {
     backgroundColor: theme.palette.common.blue,
     color: "white",
+    zIndex: 1302,
   },
   menuItem: {
     ...theme.typography.tab,
@@ -146,26 +152,34 @@ export default function Header(props) {
     setSelectedIndex(i);
   };
 
+  function handleListKeyDown(event) {
+    if (event.key === "Tab") {
+      event.preventDefault();
+      setOpenMenu(false);
+    } else if (event.key === "Escape") {
+      setOpenMenu(false);
+    }
+  }
+
   const menuOptions = useMemo(() => {
     return [
-      { name: "Services", link: "/services", activeIndex: 1, selectedIndex: 0 },
       {
         name: "Custom Software Development",
         link: "/customsoftware",
         activeIndex: 1,
-        selectedIndex: 1,
+        selectedIndex: 0,
       },
       {
         name: "iOS/Android App Development",
         link: "/mobileapps",
         activeIndex: 1,
-        selectedIndex: 2,
+        selectedIndex: 1,
       },
       {
         name: "Website Development",
         link: "/websites",
         activeIndex: 1,
-        selectedIndex: 3,
+        selectedIndex: 2,
       },
     ];
   }, []);
@@ -235,6 +249,7 @@ export default function Header(props) {
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
             onMouseOver={route.mouseOver}
+            onMouseLeave={() => setOpenMenu(false)}
           />
         ))}
       </Tabs>
@@ -248,6 +263,59 @@ export default function Header(props) {
       >
         Free Estimate
       </Button>
+
+      <Popper
+        open={openMenu}
+        anchorEl={anchorEl}
+        role={undefined}
+        placement="bottom-start"
+        transition
+        disablePortal
+      >
+        {({ TransitionProps, placement }) => (
+          <Grow
+            {...TransitionProps}
+            style={{
+              transformOrigin: placement === "top left",
+            }}
+          >
+            <Paper classes={{ root: classes.menu }} elevation={0}>
+              <ClickAwayListener onClickAway={handleClose}>
+                <MenuList
+                  onMouseOver={() => setOpenMenu(true)}
+                  onMouseLeave={handleClose}
+                  autoFocusItem={false}
+                  id="simple-menu"
+                  onKeyDown={handleListKeyDown}
+                  disablePadding
+                >
+                  {menuOptions.map((option, i) => (
+                    <MenuItem
+                      key={option + i}
+                      component={Link}
+                      to={option.link}
+                      classes={{ root: classes.menuItem }}
+                      onClick={(event) => {
+                        handleMenuItemClick(event, i);
+                        setValue(1);
+                        handleClose();
+                      }}
+                      selected={
+                        i === selectedIndex &&
+                        value === 1 &&
+                        window.location.pathname !== "/services"
+                      }
+                    >
+                      {option.name}
+                    </MenuItem>
+                  ))}
+                </MenuList>
+              </ClickAwayListener>
+            </Paper>
+          </Grow>
+        )}
+      </Popper>
+      {/*
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}
@@ -258,24 +326,8 @@ export default function Header(props) {
         elevation={0}
         keepMounted
         style={{ zIndex: 1302 }}
-      >
-        {menuOptions.map((option, i) => (
-          <MenuItem
-            key={option + i}
-            component={Link}
-            to={option.link}
-            classes={{ root: classes.menuItem }}
-            onClick={(event) => {
-              handleMenuItemClick(event, i);
-              setValue(1);
-              handleClose();
-            }}
-            selected={i === selectedIndex && value === 1}
-          >
-            {option.name}
-          </MenuItem>
-        ))}
-      </Menu>
+      ></Menu>
+*/}
     </>
   );
 

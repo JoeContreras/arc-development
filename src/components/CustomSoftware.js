@@ -108,7 +108,7 @@ const CustomSoftware = (props) => {
               component={Link}
               to="/services"
               onClick={() => {
-                setSelectedIndex(0);
+                setValue(1);
               }}
             >
               <img src={backArrow} alt="Back to services" />
@@ -160,7 +160,7 @@ const CustomSoftware = (props) => {
               component={Link}
               to="/mobileapps"
               onClick={() => {
-                setSelectedIndex(2);
+                setSelectedIndex(1);
               }}
             >
               <img src={forwardArrow} alt="Forward to mobile app Development" />
