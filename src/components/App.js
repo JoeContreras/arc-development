@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Theme from "./ui/Theme";
 import { ThemeProvider } from "@material-ui/styles";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -13,10 +13,15 @@ import Revolution from "./Revolution";
 import About from "./About";
 import Contact from "./Contact";
 import Estimate from "./Estimate";
+import Fonts from "./ui/fonts";
 
 function App() {
   const [value, setValue] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
+
+  useEffect(() => {
+    Fonts();
+  }, []);
   return (
     <ThemeProvider theme={Theme}>
       <BrowserRouter>
