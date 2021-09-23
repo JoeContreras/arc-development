@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   AppBar,
   Tab,
@@ -246,6 +246,7 @@ export default function Header(props) {
     ];
   }, [anchorEl]);
 
+  /*
   useEffect(() => {
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
@@ -275,6 +276,28 @@ export default function Header(props) {
     value,
     props,
   ]);
+
+*/
+
+  const path = typeof window !== "undefined" ? window.location.pathname : null;
+
+  const activeIndex = useCallback(() => {
+    const found = routes.find(({ link }) => link === path);
+    const menuFound = menuOptions.find(({ link }) => link === path);
+
+    if (menuFound) {
+      setValue(1);
+      setSelectedIndex(menuFound.selectedIndex);
+    } else if (found === undefined) {
+      setValue(false);
+    } else {
+      setValue(found.activeIndex);
+    }
+  }, [menuOptions, path, routes, setSelectedIndex, setValue]);
+
+  useEffect(() => {
+    activeIndex();
+  }, [activeIndex, path]);
 
   const tabs = (
     <>
@@ -431,9 +454,11 @@ export default function Header(props) {
                 <AccordionDetails classes={{ root: classes.expansionDetails }}>
                   <Grid container direction="column">
                     {menuOptions.map((route) => (
-                      <Grid item>
+                      <Grid
+                        item
+                        key={`${route}+${index}+${route.selectedIndex}`}
+                      >
                         <ListItem
-                          key={`${route}+${index}+${route.selectedIndex}`}
                           divider
                           button
                           component={Link}
