@@ -19,11 +19,16 @@ import {
   Paper,
   ClickAwayListener,
   MenuList,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Grid,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
@@ -105,6 +110,47 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     zIndex: theme.zIndex.modal + 1,
+  },
+  expansion: {
+    backgroundColor: theme.palette.common.blue,
+    borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+    "&.Mui-expanded": {
+      margin: 0,
+      borderBottom: 0,
+    },
+    "&::before": {
+      backgroundColor: "rgba(0, 0, 0, 0)",
+    },
+  },
+  expansionDetails: {
+    padding: 0,
+    backgroundColor: theme.palette.primary.dark,
+  },
+  expansionSummary: {
+    padding: 0,
+  },
+  itemDivider: {
+    borderBottom: "none",
+  },
+  listItem: {
+    padding: "0 16px",
+    "&:hover": {
+      backgroundColor: "rgba(0, 0,0,0)",
+    },
+    "&.Mui-selected": {
+      backgroundColor: "rgba(0, 0,0,0)",
+      "&:hover": {
+        backgroundColor: "rgba(0, 0,0,0)",
+      },
+    },
+  },
+  summaryContent: {
+    margin: 0,
+  },
+  serviceSelected: {
+    "& .MuiListItemText-root": {
+      opacity: 1,
+    },
   },
 }));
 
@@ -342,25 +388,99 @@ export default function Header(props) {
       >
         <div className={classes.toolbarMargin} />
         <List disablePadding>
-          {routes.map((route, index) => (
-            <ListItem
-              key={`${route}+${index}+${route.activeIndex}`}
-              divider
-              button
-              component={Link}
-              to={route.link}
-              selected={value === route.activeIndex}
-              classes={{ selected: classes.drawerItemSelected }}
-              onClick={() => {
-                setOpenDrawer(false);
-                setValue(route.activeIndex);
-              }}
-            >
-              <ListItemText disableTypography className={classes.drawerItem}>
-                {route.name}
-              </ListItemText>
-            </ListItem>
-          ))}
+          {routes.map((route, index) =>
+            route.name === "Services" ? (
+              <Accordion
+                classes={{ root: classes.expansion }}
+                key={route.name}
+                elevation={0}
+              >
+                <AccordionSummary
+                  classes={{
+                    root: classes.expansionSummary,
+                    content: classes.summaryContent,
+                  }}
+                  expandIcon={<ExpandMoreIcon color="secondary" />}
+                >
+                  <ListItem
+                    key={`${route}+${index}+${route.activeIndex}`}
+                    divider
+                    button
+                    component={Link}
+                    to={route.link}
+                    selected={value === route.activeIndex}
+                    disableRipple={true}
+                    classes={{
+                      root: classes.listItem,
+                      selected: classes.serviceSelected,
+                      divider: classes.itemDivider,
+                    }}
+                    onClick={() => {
+                      setOpenDrawer(false);
+                      setValue(route.activeIndex);
+                    }}
+                  >
+                    <ListItemText
+                      disableTypography
+                      className={classes.drawerItem}
+                    >
+                      {route.name}
+                    </ListItemText>
+                  </ListItem>
+                </AccordionSummary>
+                <AccordionDetails classes={{ root: classes.expansionDetails }}>
+                  <Grid container direction="column">
+                    {menuOptions.map((route) => (
+                      <Grid item>
+                        <ListItem
+                          key={`${route}+${index}+${route.selectedIndex}`}
+                          divider
+                          button
+                          component={Link}
+                          to={route.link}
+                          selected={
+                            selectedIndex === route.selectedIndex &&
+                            value === 1 &&
+                            window.location.pathname !== "/services"
+                          }
+                          classes={{ selected: classes.drawerItemSelected }}
+                          onClick={() => {
+                            setOpenDrawer(false);
+                            setSelectedIndex(route.selectedIndex);
+                          }}
+                        >
+                          <ListItemText
+                            disableTypography
+                            className={classes.drawerItem}
+                          >
+                            {route.name}
+                          </ListItemText>
+                        </ListItem>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </AccordionDetails>
+              </Accordion>
+            ) : (
+              <ListItem
+                key={`${route}+${index}+${route.activeIndex}`}
+                divider
+                button
+                component={Link}
+                to={route.link}
+                selected={value === route.activeIndex}
+                classes={{ selected: classes.drawerItemSelected }}
+                onClick={() => {
+                  setOpenDrawer(false);
+                  setValue(route.activeIndex);
+                }}
+              >
+                <ListItemText disableTypography className={classes.drawerItem}>
+                  {route.name}
+                </ListItemText>
+              </ListItem>
+            )
+          )}
           <ListItem
             divider
             button
