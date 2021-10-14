@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainContainer: {
     marginTop: "5em",
+    overflowX: "hidden",
     [theme.breakpoints.down("md")]: {
       marginTop: "3em",
     },
@@ -485,7 +486,9 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
-      <CallToAction setValue={setValue} />
+      <Grid item style={{textAlign: "center"}}>
+        <CallToAction setValue={setValue} />
+      </Grid>
     </Grid>
   );
 }

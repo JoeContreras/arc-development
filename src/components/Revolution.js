@@ -529,7 +529,7 @@ export default function Revolution(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        style={{ backgroundColor: "#AEB6E5", height: "90em" }}
+        style={{ backgroundColor: "#AEB6E5", height: "100em" }}
       >
         <Grid
           item
@@ -572,7 +572,7 @@ export default function Revolution(props) {
             alt="Rocket"
             style={{ maxWidth: 200 }}
             width="100%"
-            height="90%"
+            // height={matchesSM? "50%": "90%"}
           />
         </Grid>
       </Grid>
