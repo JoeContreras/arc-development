@@ -313,6 +313,7 @@ export default function Header(props) {
             component={Link}
             className={classes.tab}
             to={route.link}
+            disabled={route.name !== "Home"}
             label={route.name}
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
@@ -321,6 +322,7 @@ export default function Header(props) {
           />
         ))}
       </Tabs>
+      {/*
       <Button
         component={Link}
         to="/estimate"
@@ -332,6 +334,7 @@ export default function Header(props) {
         Free Estimate
       </Button>
 
+*/}
       <Popper
         open={openMenu}
         anchorEl={anchorEl}

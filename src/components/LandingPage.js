@@ -187,7 +187,8 @@ export default function LandingPage(props) {
             </Grid>
           </Grid>
           <Grid sm item className={classes.animation}>
-            <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+            {/*<Lottie options={defaultOptions} height={"100%"} width={"100%"} />*/}
+            animacion
           </Grid>
         </Grid>
       </Grid>
@@ -388,8 +389,8 @@ export default function LandingPage(props) {
           <div className={classes.revolutionBackground} />
         </Grid>
       </Grid>
-      <Grid item>
-        {/*-----Information Block-----*/}
+      {/*<Grid item>
+        -----Information Block-----
         <Grid
           container
           style={{ height: "80em" }}
@@ -469,10 +470,10 @@ export default function LandingPage(props) {
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid>*/}
       <Grid item>
         {/*-----Call To Action Block-----*/}
-        <CallToAction setValue={props.setValue} />
+        {/*<CallToAction setValue={props.setValue} />*/}
       </Grid>
     </Grid>
   );

@@ -109,6 +109,7 @@ export default function Footer(props) {
 
   return (
     <footer className={classes.footer}>
+      {/*
       <Hidden mdDown>
         <Grid
           container
@@ -284,6 +285,8 @@ export default function Footer(props) {
           </Grid>
         </Grid>
       </Hidden>
+
+*/}
       <img
         src={footerAdornment}
         alt="Footer black slash"
