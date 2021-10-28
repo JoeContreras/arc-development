@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   CircularProgress,
@@ -182,9 +182,17 @@ const Contact = (props) => {
       <img src={airplane} alt="paper airplane" style={{ marginLeft: "1em" }} />
     </React.Fragment>
   );
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
 
   return (
     <Grid container direction="row">
+      <ScrollToTopOnMount />
       <Grid
         item
         container

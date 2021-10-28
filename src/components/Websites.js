@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Grid,
   Hidden,
@@ -48,8 +48,17 @@ export default function Websites(props) {
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         container

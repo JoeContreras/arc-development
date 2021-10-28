@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
@@ -50,8 +50,17 @@ const Services = (props) => {
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
   const { setValue, setSelectedIndex } = props;
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         style={{

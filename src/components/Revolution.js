@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Grid,
   makeStyles,
@@ -39,15 +39,24 @@ export default function Revolution(props) {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: technologyAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         className={classes.rowContainer}

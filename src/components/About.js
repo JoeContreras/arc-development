@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Avatar,
   Grid,
@@ -260,8 +260,17 @@ export default function About(props) {
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         className={classes.rowContainer}

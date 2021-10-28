@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Button,
   CircularProgress,
@@ -944,8 +944,17 @@ const Estimate = () => {
     </Grid>
   );
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="row">
+      <ScrollToTopOnMount />
       <Grid
         item
         container

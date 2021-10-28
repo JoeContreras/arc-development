@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import {
   Grid,
@@ -45,15 +45,24 @@ const MobileApps = (props) => {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: integrationAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
+
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         container

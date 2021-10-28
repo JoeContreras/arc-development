@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import {
   Grid,
@@ -86,9 +86,17 @@ const CustomSoftware = (props) => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+  function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+  }
 
   return (
     <Grid container direction="column">
+      <ScrollToTopOnMount />
       <Grid
         item
         container
