@@ -678,6 +678,23 @@ const Estimate = () => {
         }
       );
 
+      const insertRes = await axios.post(
+        "https://arc-dev-backend.herokuapp.com/project/create/",
+        {
+          name,
+          email,
+          phone,
+          message,
+          total,
+          category,
+          service,
+          platforms,
+          features,
+          customFeatures,
+          users,
+        }
+      );
+
       setLoading(false);
       setContact(initialState);
       setAlert({
@@ -687,6 +704,7 @@ const Estimate = () => {
       });
       setDialogOpen(false);
       console.log(res.data);
+      console.log(insertRes);
     } catch (e) {
       console.log(e);
       setLoading(false);
