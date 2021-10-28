@@ -44,6 +44,7 @@ import biometrics from "../assets/biometrics.svg";
 import estimateAnimation from "../animations/estimateAnimation/data.json";
 import { isEmail, isPhone } from "../utils/Validation";
 import axios from "axios";
+import { format } from "date-fns";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -373,6 +374,7 @@ const Estimate = () => {
 
   const defaultOptions = {
     loop: true,
+    autoplay: false,
     animationData: estimateAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -661,6 +663,7 @@ const Estimate = () => {
   const sendEstimate = async () => {
     try {
       setLoading(true);
+
       const res = await axios.post(
         "https://arc-dev-backend.herokuapp.com/estimate",
         {
@@ -678,20 +681,98 @@ const Estimate = () => {
         }
       );
 
+      /*
+      console.log(
+        `${name}`,
+        `${newDate}`,
+        `service: ${service}`,
+        `features: ${features}`,
+        `category: ${category}`,
+        `platforms: ${platforms}`,
+        `customFeatures: ${customFeatures}`,
+        `users:${users}``${total}`
+      );
+
+*/
+      const newComplexity = (comp) => {
+        let newComp;
+        switch (comp) {
+          case "Low Complexity":
+            newComp = "Low";
+            break;
+          case "Medium Complexity":
+            newComp = "Medium";
+            break;
+          case "High Complexity":
+            newComp = "High";
+            break;
+          default:
+            break;
+        }
+
+        return newComp;
+      };
+
+      const newService = (oldService) => {
+        let newServ;
+        switch (oldService) {
+          case "Custom Software Development":
+            newServ = "Custom Software";
+            break;
+          case "iOS/Android App Development":
+            newServ = "Mobile App";
+            break;
+          case "Website Development":
+            newServ = "Website";
+            break;
+          default:
+            break;
+        }
+
+        return newServ;
+      };
+
+      const newPlatforms = (oldPlatforms) => {
+        const newP = oldPlatforms.map((plat) => {
+          let newPlat;
+          switch (plat) {
+            case "Web Application":
+              newPlat = "Web";
+              break;
+            case "iOS Application":
+              newPlat = "iOS";
+              break;
+            case "Android Application":
+              newPlat = "Android";
+              break;
+            default:
+              break;
+          }
+          return newPlat;
+        });
+        return newP;
+      };
+
+      const date = new Date();
+      const realComplexity = newComplexity(customFeatures);
+      const realService = newService(service);
+      const realPlatforms = newPlatforms(platforms);
+
+      // console.log(realComplexity);
+      // console.log(realService);
+      // console.log(realPlatforms);
+
       const insertRes = await axios.post(
-        "https://arc-dev-backend.herokuapp.com/project/create/",
+        "https://arc-dev-backend.herokuapp.com/project/create",
         {
-          name,
-          email,
-          phone,
-          message,
-          total,
-          category,
-          service,
-          platforms,
-          features,
-          customFeatures,
-          users,
+          name: name,
+          date: format(date, "MM/dd/yy"),
+          service: realService,
+          features: service === "Website" ? category : features.join(", "),
+          complexity: service === "Website" ? "N/A" : realComplexity,
+          platforms: service === "Website" ? "N/A" : realPlatforms.join(", "),
+          users: service === "Website" ? "N/A" : users,
+          total: `$${total}`,
         }
       );
 
