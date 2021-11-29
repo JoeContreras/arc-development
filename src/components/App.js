@@ -89,6 +89,17 @@ function App() {
           />
           <Route
             exact
+            path="/course"
+            render={(props) => (
+              <Websites
+                {...props}
+                setSelectedIndex={setSelectedIndex}
+                setValue={setValue}
+              />
+            )}
+          />
+          <Route
+            exact
             path="/revolution"
             render={(props) => (
               <Revolution

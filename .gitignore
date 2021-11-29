@@ -33,3 +33,4 @@ yarn-error.log*
 /server/
 /.idea/codestream.xml
 /.idea/codeStyles/codeStyleConfig.xml
+/.idea/workspace.xml
