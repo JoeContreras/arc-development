@@ -14,6 +14,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Estimate from "./Estimate";
 import Fonts from "./ui/fonts";
+import Course from "./Course";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -91,7 +92,7 @@ function App() {
             exact
             path="/course"
             render={(props) => (
-              <Websites
+              <Course
                 {...props}
                 setSelectedIndex={setSelectedIndex}
                 setValue={setValue}

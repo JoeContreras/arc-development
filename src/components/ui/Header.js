@@ -226,6 +226,12 @@ export default function Header(props) {
         activeIndex: 1,
         selectedIndex: 2,
       },
+      {
+        name: "Our Courses",
+        link: "/course",
+        activeIndex: 1,
+        selectedIndex: 3,
+      },
     ];
   }, []);
 
