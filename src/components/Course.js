@@ -71,13 +71,29 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#1C1D1F",
     height: "22em",
     width: "100%",
-    // [theme.breakpoints.down("md")]: {
-    //   height: "18em",
-    //   width: "20em",
-    // },
+    [theme.breakpoints.down("sm")]: {
+      height: "25em",
+      // backgroundColor: "red",
+      // width: "20em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: "27.5rem",
+      // width: "20em",
+    },
   },
   heroContent: {
     maxWidth: "45em",
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "35em",
+      // height: "18em",
+      // width: "20em",
+    },
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "35em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: "21rem",
+    },
     // marginLeft: "25em",
     // marginTop: "1em",
     // [theme.breakpoints.down("md")]: {
@@ -95,13 +111,31 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: "1em",
     // margin: "1 auto",
     [theme.breakpoints.down("md")]: {
-      marginTop: "3em",
+      width: "36em",
+      // marginTop: "3em",
+      // width: "48em",
+      // margin: "0 10em",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "29em",
+      // marginTop: "3em",
+      // width: "48em",
+      // margin: "0 10em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "22rem",
       // width: "48em",
       // margin: "0 10em",
     },
   },
   learnMoreCard: {
     width: "45em",
+    [theme.breakpoints.down("md")]: {
+      width: "35rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "22rem",
+    },
   },
   stickyContainer: {
     // position: "absolute",
@@ -113,9 +147,15 @@ const useStyles = makeStyles((theme) => ({
   },
   stickyCard: {
     width: "25em",
+    [theme.breakpoints.down("xs")]: {
+      width: "22rem",
+    },
   },
   cardButtons: {
     width: "23em",
+    [theme.breakpoints.down("xs")]: {
+      width: "20rem",
+    },
   },
 }));
 
@@ -269,7 +309,7 @@ const Course = (props) => {
                 disableRipple
                 color="primary"
                 size="large"
-                style={{ width: "18rem" }}
+                style={{ width: matchesXS ? "15rem" : "18rem" }}
               >
                 Add to Cart
               </Button>
@@ -288,7 +328,7 @@ const Course = (props) => {
               disableElevation
               disableRipple
               size="large"
-              style={{ width: "23.5rem" }}
+              style={{ width: matchesXS ? "19rem" : "23.5rem" }}
             >
               Buy Now
             </Button>
@@ -557,7 +597,10 @@ const Course = (props) => {
   );
 
   const courseRequirements = (
-    <Grid container style={{ maxWidth: "46.5rem" }}>
+    <Grid
+      container
+      style={{ maxWidth: matchesXS ? "22rem" : matchesSM ? "35em" : "46.5rem" }}
+    >
       <Grid item>
         <Typography variant="h4">Requirements</Typography>
       </Grid>
@@ -738,8 +781,9 @@ const Course = (props) => {
       {/* mobile => Direction=== column*/}
       <Grid
         container
-        direction="row"
+        direction={matchesMD ? "column" : "row"}
         justifyContent="space-evenly"
+        alignItems={matchesMD ? "center" : undefined}
         style={{ marginTop: "3rem" }}
         // spacing={2}
       >
@@ -755,7 +799,9 @@ const Course = (props) => {
           container
           direction="column"
           className={classes.learning}
-          spacing={2}
+          // spacing={2}
+          alignItems={matchesSM ? "center" : undefined}
+          style={{ marginTop: matchesMD ? "3rem" : undefined }}
         >
           <Grid item>
             <Card className={classes.learnMoreCard} variant="outlined">
@@ -786,17 +832,32 @@ const Course = (props) => {
             </Card>
           </Grid>
 
-          <Grid item style={{ width: "46.5rem" }}>
-            <Divider />
+          <Grid
+            item
+            style={{
+              width: matchesXS ? "22rem" : matchesMD ? "35rem" : "46.5rem",
+            }}
+          >
+            <Divider variant={matchesSM ? "middle" : null} />
           </Grid>
 
           <Grid item>{courseRequirements}</Grid>
 
-          <Grid item style={{ width: "46.5rem" }}>
-            <Divider />
+          <Grid
+            item
+            style={{
+              width: matchesXS ? "22rem" : matchesMD ? "35rem" : "46.5rem",
+            }}
+          >
+            <Divider variant={matchesSM ? "middle" : null} />
           </Grid>
 
-          <Grid item style={{ width: "46.5rem" }}>
+          <Grid
+            item
+            style={{
+              width: matchesXS ? "22rem" : matchesMD ? "35em" : "46.5rem",
+            }}
+          >
             {courseDescription}
           </Grid>
         </Grid>

@@ -20,7 +20,7 @@ export const courseContent = [
     length: "7 lectures • 50min",
     content: [
       {
-        title: "Welcome To The Course Show lecture description",
+        title: "Welcome To The Course ",
         length: "03:54",
       },
       {
