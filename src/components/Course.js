@@ -11,6 +11,7 @@ import {
   Dialog,
   Divider,
   Grid,
+  Hidden,
   Typography,
   useMediaQuery,
 } from "@material-ui/core";
@@ -69,43 +70,46 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     backgroundColor: "#1C1D1F",
     height: "22em",
-    [theme.breakpoints.down("md")]: {
-      height: "18em",
-      width: "20em",
-    },
+    width: "100%",
+    // [theme.breakpoints.down("md")]: {
+    //   height: "18em",
+    //   width: "20em",
+    // },
   },
   heroContent: {
-    width: "45em",
-    marginLeft: "25em",
-    marginTop: "1em",
-    [theme.breakpoints.down("md")]: {
-      width: "20em",
-      marginLeft: "5em",
-    },
+    maxWidth: "45em",
+    // marginLeft: "25em",
+    // marginTop: "1em",
+    // [theme.breakpoints.down("md")]: {
+    //   width: "20em",
+    //   marginLeft: "5em",
+    // },
   },
   heroSubtitle: {
     color: theme.palette.common.orange,
   },
   learning: {
-    maxWidth: "90em",
-    marginLeft: "25em",
-    marginTop: "1em",
+    maxWidth: "45.5em",
+
+    // marginLeft: "25em",
+    // marginTop: "1em",
+    // margin: "1 auto",
     [theme.breakpoints.down("md")]: {
-      width: "48em",
-      margin: "0 auto",
+      marginTop: "3em",
+      // width: "48em",
+      // margin: "0 10em",
     },
   },
   learnMoreCard: {
     width: "45em",
   },
   stickyContainer: {
-    height: "100%",
-    position: "absolute",
-    top: "29rem",
-    right: "20rem",
-    [theme.breakpoints.down("md")]: {
-      position: "static",
-    },
+    // position: "absolute",
+    // top: "30.5rem",
+    // right: "20rem",
+    // [theme.breakpoints.down("md")]: {
+    //   position: "static",
+    // },
   },
   stickyCard: {
     width: "25em",
@@ -136,7 +140,12 @@ const Course = (props) => {
   const infoCard = (
     <React.Fragment>
       <CardContent>
-        <Typography variant="h4" component="div" gutterBottom>
+        <Typography
+          variant="h4"
+          component="div"
+          gutterBottom
+          align={matchesMD ? "center" : undefined}
+        >
           What you'll learn
         </Typography>
 
@@ -432,7 +441,12 @@ const Course = (props) => {
   const TrustedCard = (
     <React.Fragment>
       <CardContent>
-        <Typography variant="h4" component="div" gutterBottom>
+        <Typography
+          variant="h4"
+          component="div"
+          gutterBottom
+          align={matchesMD ? "center" : undefined}
+        >
           Top companies offer this course to their employees
         </Typography>
         <Typography
@@ -645,11 +659,24 @@ const Course = (props) => {
   );
 
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" style={{ margin: 0 }}>
       <ScrollToTopOnMount />
       {/*Hero Section*/}
-      <Grid container row justifyContent="flex-start" className={classes.hero}>
-        <Grid item container direction="column" className={classes.heroContent}>
+      <Grid
+        container
+        row
+        justifyContent={matchesMD ? "center" : "flex-start"}
+        className={classes.hero}
+        alignItems="center"
+      >
+        <Grid
+          item
+          container
+          direction="column"
+          className={classes.heroContent}
+          style={{ marginLeft: matchesMD ? null : "25em" }}
+          align={matchesMD ? "center" : undefined}
+        >
           <Typography
             variant="h3"
             gutterBottom
@@ -675,7 +702,11 @@ const Course = (props) => {
             <span style={{ color: "#FFBA60" }}>, Saul Gutierrez</span>{" "}
             <span style={{ color: "#FFBA60" }}>, Paola Zamora</span>{" "}
           </Typography>
-          <Grid container spacing={1}>
+          <Grid
+            container
+            spacing={1}
+            justifyContent={matchesMD ? "center" : undefined}
+          >
             <Grid item>
               <NewReleasesIcon color="primary" />
             </Grid>
@@ -707,61 +738,77 @@ const Course = (props) => {
       {/* mobile => Direction=== column*/}
       <Grid
         container
-        direction="column"
-        className={classes.learning}
-        spacing={2}
+        direction="row"
+        justifyContent="space-evenly"
+        style={{ marginTop: "3rem" }}
+        // spacing={2}
       >
-        <Grid container spacing={2} direction={matchesMD ? "column" : "row"}>
-          <Grid item>
-            <Card className={classes.learnMoreCard} variant="outlined">
-              {infoCard}
-            </Card>
-          </Grid>
+        <Hidden lgUp>
           <Grid item className={classes.stickyContainer}>
             <Card className={classes.stickyCard} variant="outlined">
               {stickyCard}
             </Card>
           </Grid>
-        </Grid>
-        <Grid item style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <Card className={classes.learnMoreCard} variant="outlined">
-            {TrustedCard}
-          </Card>
+        </Hidden>
+        <Grid
+          item
+          container
+          direction="column"
+          className={classes.learning}
+          spacing={2}
+        >
+          <Grid item>
+            <Card className={classes.learnMoreCard} variant="outlined">
+              {infoCard}
+            </Card>
+          </Grid>
+          <Grid item style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+            <Card className={classes.learnMoreCard} variant="outlined">
+              {TrustedCard}
+            </Card>
+          </Grid>
+
+          <Grid item align={matchesMD ? "center" : undefined}>
+            <Typography color="primary" variant="h4">
+              Course content
+            </Typography>
+          </Grid>
+
+          <Grid item align={matchesMD ? "center" : undefined}>
+            <Typography variant="subtitle1" style={{ fontSize: "1rem" }}>
+              10 sections • 126 lectures • 28h 9m total length
+            </Typography>
+          </Grid>
+
+          <Grid item>
+            <Card className={classes.learnMoreCard} variant="outlined">
+              {CourseContent}
+            </Card>
+          </Grid>
+
+          <Grid item style={{ width: "46.5rem" }}>
+            <Divider />
+          </Grid>
+
+          <Grid item>{courseRequirements}</Grid>
+
+          <Grid item style={{ width: "46.5rem" }}>
+            <Divider />
+          </Grid>
+
+          <Grid item style={{ width: "46.5rem" }}>
+            {courseDescription}
+          </Grid>
         </Grid>
 
-        <Grid item>
-          <Typography color="primary" variant="h4">
-            Course content
-          </Typography>
-        </Grid>
-
-        <Grid item>
-          <Typography variant="subtitle1" style={{ fontSize: "1rem" }}>
-            10 sections • 126 lectures • 28h 9m total length
-          </Typography>
-        </Grid>
-
-        <Grid item>
-          <Card className={classes.learnMoreCard} variant="outlined">
-            {CourseContent}
-          </Card>
-        </Grid>
-
-        <Grid item style={{ width: "46.5rem" }}>
-          <Divider />
-        </Grid>
-
-        <Grid item>{courseRequirements}</Grid>
-
-        <Grid item style={{ width: "46.5rem" }}>
-          <Divider />
-        </Grid>
-
-        <Grid item style={{ width: "46.5rem" }}>
-          {courseDescription}
-        </Grid>
+        <Hidden mdDown>
+          <Grid item className={classes.stickyContainer}>
+            <Card className={classes.stickyCard} variant="outlined">
+              {stickyCard}
+            </Card>
+          </Grid>
+        </Hidden>
       </Grid>
-
       {/*<CallToAction setValue={setValue} />*/}
     </Grid>
   );
