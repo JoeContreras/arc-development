@@ -5,10 +5,8 @@ import {
   AccordionSummary,
   Button,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
-  Dialog,
   Divider,
   Grid,
   Hidden,
@@ -16,13 +14,7 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import { Link } from "react-router-dom";
-import ButtonArrow from "./ui/ButtonArrow";
-import customSoftwareIcon from "../assets/Custom_Software_Icon.svg";
-import mobileappsIcon from "../assets/mobileIcon.svg";
-import websitesIcon from "../assets/websiteIcon.svg";
 import { useTheme } from "@material-ui/core/styles";
-import CallToAction from "./ui/CallToAction";
 import LanguageIcon from "@material-ui/icons/Language";
 import NewReleasesIcon from "@material-ui/icons/NewReleases";
 import ClosedCaptionIcon from "@material-ui/icons/ClosedCaption";
@@ -165,9 +157,9 @@ const Course = (props) => {
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
-  const matchesLG = useMediaQuery(theme.breakpoints.down("lg"));
-  const matchesXL = useMediaQuery(theme.breakpoints.down("xl"));
-  const { setValue, setSelectedIndex } = props;
+  // const matchesLG = useMediaQuery(theme.breakpoints.down("lg"));
+  // const matchesXL = useMediaQuery(theme.breakpoints.down("xl"));
+  // const { setValue, setSelectedIndex } = props;
 
   function ScrollToTopOnMount() {
     useEffect(() => {
@@ -195,8 +187,8 @@ const Course = (props) => {
                         //Mobile version === direction=>column
                         */}
             <Grid item>
-              {learnInfo.map((topic) => (
-                <Grid container>
+              {learnInfo.map((topic, index) => (
+                <Grid container key={topic + index}>
                   <Grid item xs={1}>
                     <CheckIcon />
                   </Grid>
@@ -204,7 +196,7 @@ const Course = (props) => {
                   <Grid item xs style={{ marginBottom: ".5rem" }}>
                     <Typography
                       style={{ fontSize: "1rem" }}
-                      color="text.secondary"
+                      // color="text.secondary"
                     >
                       {topic}
                     </Typography>
@@ -219,8 +211,8 @@ const Course = (props) => {
                         //Mobile version === direction=>column
                         */}
             <Grid item>
-              {learnInfo2.map((topic) => (
-                <Grid container>
+              {learnInfo2.map((topic, index) => (
+                <Grid container key={topic + index}>
                   <Grid item xs={1}>
                     <CheckIcon />
                   </Grid>
@@ -228,7 +220,7 @@ const Course = (props) => {
                   <Grid item xs style={{ marginBottom: ".5rem" }}>
                     <Typography
                       style={{ fontSize: "1rem" }}
-                      color="text.secondary"
+                      // color="text.secondary"
                     >
                       {topic}
                     </Typography>
@@ -283,7 +275,7 @@ const Course = (props) => {
           </Grid>
 
           <Grid item>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2">
               13 hours left at this price!
             </Typography>
           </Grid>
@@ -543,8 +535,8 @@ const Course = (props) => {
 
   const CourseContent = (
     <div>
-      {courseContent.map((item) => (
-        <Accordion>
+      {courseContent.map((item, index) => (
+        <Accordion key={item + index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -566,8 +558,8 @@ const Course = (props) => {
               </Grid>
             </Grid>
           </AccordionSummary>
-          {item.content.map((lecture) => (
-            <AccordionDetails>
+          {item.content.map((lecture, index) => (
+            <AccordionDetails key={lecture + index}>
               <Grid container justifyContent="space-around">
                 <Grid item container xs={11} spacing={1}>
                   <Grid item>
@@ -670,8 +662,13 @@ const Course = (props) => {
                 years.{" "}
               </Typography>
             </Grid>
-            {description1.map((description) => (
-              <Grid container direction="column" spacing={1}>
+            {description1.map((description, index) => (
+              <Grid
+                container
+                direction="column"
+                spacing={1}
+                key={description + index}
+              >
                 <Grid item>
                   <Typography variant="h4" style={{ fontSize: "1.2rem" }}>
                     {description.title}
@@ -679,8 +676,8 @@ const Course = (props) => {
                 </Grid>
                 <Grid item container>
                   <ul>
-                    {description.content.map((item) => (
-                      <li style={{ marginBottom: ".5rem" }}>
+                    {description.content.map((item, index) => (
+                      <li style={{ marginBottom: ".5rem" }} key={item + index}>
                         <Grid item>
                           <Typography
                             style={{ fontSize: "1rem" }}
@@ -707,7 +704,6 @@ const Course = (props) => {
       {/*Hero Section*/}
       <Grid
         container
-        row
         justifyContent={matchesMD ? "center" : "flex-start"}
         className={classes.hero}
         alignItems="center"
@@ -826,7 +822,7 @@ const Course = (props) => {
             </Typography>
           </Grid>
 
-          <Grid item>
+          <Grid item style={{ marginBottom: "2em" }}>
             <Card className={classes.learnMoreCard} variant="outlined">
               {CourseContent}
             </Card>
@@ -836,9 +832,10 @@ const Course = (props) => {
             item
             style={{
               width: matchesXS ? "22rem" : matchesMD ? "35rem" : "46.5rem",
+              marginBottom: "1em",
             }}
           >
-            <Divider variant={matchesSM ? "middle" : null} />
+            <Divider variant="middle" />
           </Grid>
 
           <Grid item>{courseRequirements}</Grid>
@@ -849,13 +846,14 @@ const Course = (props) => {
               width: matchesXS ? "22rem" : matchesMD ? "35rem" : "46.5rem",
             }}
           >
-            <Divider variant={matchesSM ? "middle" : null} />
+            <Divider variant="middle" />
           </Grid>
 
           <Grid
             item
             style={{
               width: matchesXS ? "22rem" : matchesMD ? "35em" : "46.5rem",
+              marginTop: "2em",
             }}
           >
             {courseDescription}
