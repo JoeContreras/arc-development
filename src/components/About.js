@@ -9,7 +9,6 @@ import {
   useTheme,
 } from "@material-ui/core";
 import history from "../assets/history.svg";
-import profile from "../assets/joe.jpg";
 import CallToAction from "./ui/CallToAction";
 
 const useStyles = makeStyles((theme) => ({
