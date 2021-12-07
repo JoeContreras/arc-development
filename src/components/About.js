@@ -10,8 +10,6 @@ import {
 } from "@material-ui/core";
 import history from "../assets/history.svg";
 import profile from "../assets/joe.jpg";
-import yearbook from "../assets/yearbook.svg";
-import puppy from "../assets/puppy.svg";
 import CallToAction from "./ui/CallToAction";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   avatar: {
-    height: "25em",
-    width: "25em",
+    height: "22em",
+    width: "22em",
     [theme.breakpoints.down("sm")]: {
       height: "20em",
       width: "20em",
@@ -183,32 +181,34 @@ export default function About(props) {
       >
         <Grid item>
           <Typography align="center" variant="h4" gutterBottom>
-            Team
+            Development Approaches We Follow
           </Typography>
         </Grid>
-        <Grid item>
-          <Typography variant="body1" paragraph align="center">
-            Joe Contreras, Founder
-          </Typography>
-          <Typography variant="body1" paragraph align="center">
-            I started coding when I was 2 years old.
-          </Typography>
+        <Grid item style={{ marginBottom: "1em" }}>
+          <Avatar
+            alt="agile"
+            src="https://res.cloudinary.com/joeutd/image/upload/v1638906851/arc/aboutus/agile2_a5lqtq.png"
+            className={classes.avatar}
+          />
         </Grid>
         <Grid item>
-          <Avatar alt="founder" src={profile} className={classes.avatar} />
+          <Typography variant="h5" paragraph align="center" color="primary">
+            Agile
+          </Typography>
         </Grid>
         <Grid item container justify={matchesMD ? "center" : undefined}>
           <Hidden lgUp>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" align="center" paragraph>
-                I taught myself basic coding from a library book in third grade,
-                and ever since then my passion has solely been set on learning —
-                learning about computers, learning mathematics and philosophy,
-                studying design, always just learning.
+                The Agile methodology allows us to release reliable software
+                fast and introduce changes easily. The development process
+                consists of 1-4 week iterations resulting in an evolved version
+                of software shipped each time.
               </Typography>
               <Typography variant="body1" align="center" paragraph>
-                Now I’m ready to apply everything I’ve learned, and to help
-                others with the intuition I have developed.
+                {" "}
+                After each iteration, we get real user feedback that drives
+                informed decisions on the next development steps.
               </Typography>
             </Grid>
           </Hidden>
@@ -220,30 +220,93 @@ export default function About(props) {
             alignItems={matchesMD ? "center" : undefined}
             style={{ marginBottom: matchesMD ? "2.5em" : 0 }}
           >
-            <Grid item>
-              <img
-                src={yearbook}
-                alt="yearbook page about founder"
-                style={{ maxWidth: matchesMD ? 300 : undefined }}
+            <Grid item style={{ marginBottom: "1em" }}>
+              <Avatar
+                alt="devops"
+                src="https://res.cloudinary.com/joeutd/image/upload/v1638907588/arc/aboutus/devopsog_utoktw.svg"
+                className={classes.avatar}
               />
             </Grid>
-            <Grid item>
-              <Typography variant="caption">
-                a page from my Sophomore yearbook
+
+            <Grid item style={{ marginLeft: matchesMD ? undefined : "2em" }}>
+              <Typography
+                variant="h5"
+                paragraph
+                align={matchesMD ? "center" : "left"}
+                color="primary"
+              >
+                DevOps
+              </Typography>
+            </Grid>
+            <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "left"}
+                paragraph
+              >
+                With an established DevOps culture at Arc Development, we
+                streamline software delivery and improve its quality with the
+                following DevOps best practices:
+              </Typography>
+
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "left"}
+                paragraph
+              >
+                <Typography color="primary" component="span">
+                  Infrastructure as Code (IaC):
+                </Typography>
+                automating the creation of new infrastructures and keeping them
+                consistent with each other to ensure smooth software deployment.
+              </Typography>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "left"}
+                paragraph
+              >
+                <Typography color="primary" component="span">
+                  Continuous Integration/Continuous Delivery or Continuous
+                  Deployment (CI/CD):
+                </Typography>
+                automating integration and deployment of code changes.
+              </Typography>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "left"}
+                paragraph
+              >
+                <Typography color="primary" component="span">
+                  Automated testing:
+                </Typography>
+                automating regression, performance, and other types of testing
+                that are continuously carried out within the CI/CD pipeline.
+              </Typography>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "left"}
+                paragraph
+              >
+                <Typography color="primary" component="span">
+                  Application performance monitoring:
+                </Typography>
+                configuring application performance monitoring tools to detect
+                post-release bugs quickly.
               </Typography>
             </Grid>
           </Grid>
           <Hidden mdDown>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" align="center" paragraph>
-                I taught myself basic coding from a library book in third grade,
-                and ever since then my passion has solely been set on learning —
-                learning about computers, learning mathematics and philosophy,
-                studying design, always just learning.
+                The Agile methodology allows us to release reliable software
+                fast and introduce changes easily. The development process
+                consists of 1-4 week iterations resulting in an evolved version
+                of software shipped each time.
               </Typography>
               <Typography variant="body1" align="center" paragraph>
-                Now I’m ready to apply everything I’ve learned, and to help
-                others with the intuition I have developed.
+                {" "}
+                After each iteration, we get real user feedback that drives
+                informed decisions on the next development steps.
               </Typography>
             </Grid>
           </Hidden>
@@ -254,16 +317,44 @@ export default function About(props) {
             lg
             alignItems={matchesMD ? "center" : "flex-end"}
           >
-            <Grid item>
-              <img
-                src={puppy}
-                alt="grey spotted puppy"
-                style={{ maxWidth: matchesMD ? 300 : undefined }}
+            <Grid item style={{ marginBottom: "1em" }}>
+              <Avatar
+                alt="founder"
+                src="https://res.cloudinary.com/joeutd/image/upload/v1638906679/arc/aboutus/modular_akhkvc.svg"
+                className={classes.avatar}
               />
             </Grid>
-            <Grid item>
-              <Typography variant="caption">
-                my miniature dapple dachshund, Sterling
+
+            <Grid item style={{ marginRight: matchesMD ? undefined : "2em" }}>
+              <Typography
+                variant="h5"
+                paragraph
+                align={matchesMD ? "center" : "right"}
+                color="primary"
+              >
+                Modular architecture
+              </Typography>
+            </Grid>
+
+            <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "right"}
+                paragraph
+              >
+                We use modular architecture patterns, such as microservices, in
+                combination with containers to develop applications as a suite
+                of independent functional components that can be effortlessly
+                ported to any environment.{" "}
+              </Typography>
+              <Typography
+                variant="body1"
+                align={matchesMD ? "center" : "right"}
+                paragraph
+              >
+                Such an approach ensures higher application reliability, better
+                maintainability and expandability, as well as shorter
+                development time.
               </Typography>
             </Grid>
           </Grid>
