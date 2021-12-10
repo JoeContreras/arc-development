@@ -1025,6 +1025,7 @@ const Estimate = () => {
     </Grid>
   );
 
+/*
   function ScrollToTopOnMount() {
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -1032,10 +1033,11 @@ const Estimate = () => {
 
     return null;
   }
+*/
 
   return (
     <Grid container direction="row">
-      <ScrollToTopOnMount />
+      {/*<ScrollToTopOnMount />*/}
       <Grid
         item
         container
