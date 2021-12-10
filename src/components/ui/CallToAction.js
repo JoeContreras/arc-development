@@ -91,7 +91,7 @@ const CallToAction = (props) => {
   const { setValue } = props;
   return (
     <Parallax
-      bgImage={matchesSM ? mobileBackground : background}
+      bgImage="https://res.cloudinary.com/joeutd/image/upload/v1639093451/arc/footer/fog-small-size_wn9qev.jpg"
       bgImageAlt="call to action"
       strength={matchesSM ? 100 : 250}
     >

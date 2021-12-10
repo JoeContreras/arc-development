@@ -78,7 +78,7 @@ export default function About(props) {
         >
           Whether it be person to person, business to consumer, or an individual
           to their interests, technology is meant to bring us closer to what we
-          care about in the best way possible. Arc Development will use that
+          care about in the best way possible. Amp Development will use that
           principle to provide fast, modern, inexpensive, and aesthetic software
           to the Midwest and beyond.
         </Typography>
@@ -243,7 +243,7 @@ export default function About(props) {
                 align={matchesMD ? "center" : "left"}
                 paragraph
               >
-                With an established DevOps culture at Arc Development, we
+                With an established DevOps culture at Amp Development, we
                 streamline software delivery and improve its quality with the
                 following DevOps best practices:
               </Typography>

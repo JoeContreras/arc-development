@@ -450,7 +450,7 @@ const Course = (props) => {
           </Grid>
           <Grid item>
             <Typography variant="body1" style={{ fontSize: "1.1rem" }}>
-              Get your team access to 6,000+ top Arc courses anytime, anywhere.
+              Get your team access to 6,000+ top Amp courses anytime, anywhere.
             </Typography>
           </Grid>
           <Grid item>

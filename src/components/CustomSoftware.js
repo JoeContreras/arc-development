@@ -139,7 +139,7 @@ const CustomSoftware = (props) => {
           <Grid item>
             <Typography variant="body1" paragraph>
               Weather we're replacing old software or inventing new solutions,
-              Arc Development is here to help you tackle technology
+              Amp Development is here to help you tackle technology
             </Typography>
             <Typography variant="body1" paragraph>
               Using commercial software leaves you with a lot of stuff you don't
