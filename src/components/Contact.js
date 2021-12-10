@@ -505,7 +505,7 @@ const Contact = (props) => {
                 variant="subtitle1"
                 style={{
                   fontSize: "1.5rem",
-                  color: matchesSM ? "#FFBA60" : "#fff",
+                  color: "#FFBA60",
                 }}
               >
                 Take advantage of the 21st Century.
