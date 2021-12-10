@@ -8,8 +8,6 @@ import {
   useTheme,
 } from "@material-ui/core";
 import ButtonArrow from "./ButtonArrow";
-import mobileBackground from "../../assets/mobileBackground.jpg";
-import background from "../../assets/background.jpg";
 import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 
