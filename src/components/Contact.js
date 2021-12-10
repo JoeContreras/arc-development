@@ -12,8 +12,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
-import background from "../assets/background.jpg";
-import mobile from "../assets/mobileBackground.jpg";
 import phoneImg from "../assets/phone.svg";
 import emailImg from "../assets/email.svg";
 import airplane from "../assets/send.svg";
@@ -24,14 +22,16 @@ import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    backgroundImage: `url(${background})`,
+    backgroundImage:
+      "url(https://res.cloudinary.com/joeutd/image/upload/v1639093451/arc/footer/fog-small-size_wn9qev.jpg)",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "60em",
     paddingBottom: "10em",
     [theme.breakpoints.down("md")]: {
-      backgroundImage: `url(${mobile})`,
+      backgroundImage:
+        "url(https://res.cloudinary.com/joeutd/image/upload/v1639093451/arc/footer/fog-small-size_wn9qev.jpg)",
     },
   },
   estimateButton: {
@@ -503,7 +503,10 @@ const Contact = (props) => {
               </Typography>
               <Typography
                 variant="subtitle1"
-                style={{ fontSize: "1.5rem", color: "#fff" }}
+                style={{
+                  fontSize: "1.5rem",
+                  color: matchesSM ? "#FFBA60" : "#fff",
+                }}
               >
                 Take advantage of the 21st Century.
               </Typography>
