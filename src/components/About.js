@@ -61,7 +61,7 @@ export default function About(props) {
         style={{ marginTop: matchesMD ? "1em" : "2em" }}
       >
         <Typography align={matchesMD ? "center" : undefined} variant="h2">
-          About Us
+          Sobre nosotros
         </Typography>
       </Grid>
       <Grid
@@ -76,11 +76,11 @@ export default function About(props) {
           align="center"
           className={classes.missionStatement}
         >
-          Whether it be person to person, business to consumer, or an individual
-          to their interests, technology is meant to bring us closer to what we
-          care about in the best way possible. Amp Development will use that
-          principle to provide fast, modern, inexpensive, and aesthetic software
-          to the Midwest and beyond.
+          Ya sea de persona a persona, de empresa a consumidor, o de un
+          individuo a sus intereses, la tecnología está diseñada para acercarnos
+          a lo que nos importa de la mejor manera posible. Amp Development
+          utilizará ese principio para proporcionar un software rápido, moderno,
+          barato y estético al todo el pais y más allá.
         </Typography>
       </Grid>
       <Grid
@@ -106,7 +106,7 @@ export default function About(props) {
                 variant="h4"
                 gutterBottom
               >
-                History
+                Historia
               </Typography>
             </Grid>
             <Grid item>
@@ -116,46 +116,48 @@ export default function About(props) {
                 paragraph
                 style={{ fontWeight: 700, fontStyle: "italic" }}
               >
-                We're the new kid on the block
+                Somos el nuevo chico en el barrio
               </Typography>
               <Typography
                 variant="body1"
                 align={matchesMD ? "center" : undefined}
                 paragraph
               >
-                Founded in 2019, we’re ready to get our hands on the world’s
-                business problems.
+                Fundada en 2020, estamos listos para poner las manos en los
+                problemas empresariales del mundo.
               </Typography>
               <Typography
                 variant="body1"
                 align={matchesMD ? "center" : undefined}
                 paragraph
               >
-                It all started with one question: Why aren’t all businesses
-                using available technology? There are many different answers to
-                that question: economic barriers, social barriers, educational
-                barriers, and sometimes institutional barriers.
+                Todo comenzó con una pregunta: ¿Por qué no todas las empresas
+                utilizan la tecnología disponible? Hay muchas respuestas
+                diferentes a esa pregunta: barreras económicas, barreras
+                sociales, barreras educativas y, a veces, barreras
+                institucionales.
               </Typography>
               <Typography
                 variant="body1"
                 align={matchesMD ? "center" : undefined}
                 paragraph
               >
-                We aim to be a powerful force in overcoming these obstacles.
-                Recent developments in software engineering and computing power,
-                compounded by the proliferation of smart phones, has opened up
-                infinite worlds of possibility. Things that have always been
-                done by hand can now be done digitally and automatically, and
-                completely new methods of interaction are created daily. Taking
-                full advantage of these advancements is the name of the game.
+                Nuestro objetivo es ser una fuerza poderosa para superar estos
+                obstáculos. Los recientes avances en ingeniería de software y
+                potencia informática, agravados por la proliferación de
+                teléfonos inteligentes, han abierto infinitos mundos de
+                posibilidades. Las cosas que siempre se han hecho a mano pueden
+                hacerse ahora de forma digital y automática, y cada día se crean
+                métodos de interacción completamente nuevos. Aprovechar al
+                máximo estos avances es la regla del juego.
               </Typography>
               <Typography
                 variant="body1"
                 align={matchesMD ? "center" : undefined}
                 paragraph
               >
-                All this change can be a lot to keep up with, and that’s where
-                we come in.
+                Todo este cambio puede ser muy difícil de seguir, y ahí es donde
+                entramos nosotros.
               </Typography>
             </Grid>
           </Grid>
@@ -180,7 +182,7 @@ export default function About(props) {
       >
         <Grid item>
           <Typography align="center" variant="h4" gutterBottom>
-            Development Approaches We Follow
+            Planteamientos de desarrollo que seguimos
           </Typography>
         </Grid>
         <Grid item style={{ marginBottom: "1em" }}>
@@ -192,22 +194,23 @@ export default function About(props) {
         </Grid>
         <Grid item>
           <Typography variant="h5" paragraph align="center" color="primary">
-            Agile
+            Ágil
           </Typography>
         </Grid>
         <Grid item container justify={matchesMD ? "center" : undefined}>
           <Hidden lgUp>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" align="center" paragraph>
-                The Agile methodology allows us to release reliable software
-                fast and introduce changes easily. The development process
-                consists of 1-4 week iterations resulting in an evolved version
-                of software shipped each time.
+                La metodología ágil nos permite lanzar rápidamente un software
+                fiable e introducir cambios con facilidad. El proceso de
+                desarrollo consiste en iteraciones de 1 a 4 semanas que dan como
+                resultado una versión evolucionada del software que se envía
+                cada vez.
               </Typography>
               <Typography variant="body1" align="center" paragraph>
-                {" "}
-                After each iteration, we get real user feedback that drives
-                informed decisions on the next development steps.
+                Después de cada iteración, obtenemos comentarios reales de los
+                usuarios que nos permiten tomar decisiones informadas sobre los
+                siguientes pasos de desarrollo.
               </Typography>
             </Grid>
           </Hidden>
@@ -243,9 +246,9 @@ export default function About(props) {
                 align={matchesMD ? "center" : "left"}
                 paragraph
               >
-                With an established DevOps culture at Amp Development, we
-                streamline software delivery and improve its quality with the
-                following DevOps best practices:
+                Con una cultura DevOps establecida en Amp Development,
+                agilizamos la entrega de software y mejoramos su calidad con las
+                siguientes mejores prácticas DevOps:
               </Typography>
 
               <Typography
@@ -254,10 +257,11 @@ export default function About(props) {
                 paragraph
               >
                 <Typography color="primary" component="span">
-                  Infrastructure as Code (IaC):
+                  Infraestructura como código (IaC):
                 </Typography>
-                automating the creation of new infrastructures and keeping them
-                consistent with each other to ensure smooth software deployment.
+                automatizando la creación de nuevas infraestructuras y
+                manteniéndolas consistentes entre sí para asegurar un despliegue
+                de software sin problemas.
               </Typography>
               <Typography
                 variant="body1"
@@ -265,10 +269,11 @@ export default function About(props) {
                 paragraph
               >
                 <Typography color="primary" component="span">
-                  Continuous Integration/Continuous Delivery or Continuous
-                  Deployment (CI/CD):
+                  Integración continua/entrega continua o despliegue continuo
+                  (CI/CD):
                 </Typography>
-                automating integration and deployment of code changes.
+                automatización de la integración y el despliegue de los cambios
+                de código.
               </Typography>
               <Typography
                 variant="body1"
@@ -276,10 +281,11 @@ export default function About(props) {
                 paragraph
               >
                 <Typography color="primary" component="span">
-                  Automated testing:
+                  Pruebas automatizadas:
                 </Typography>
-                automating regression, performance, and other types of testing
-                that are continuously carried out within the CI/CD pipeline.
+                automatización de las pruebas de regresión, rendimiento y otros
+                tipos de pruebas que se llevan a cabo de forma continua dentro
+                de la canalización de CI/CD.
               </Typography>
               <Typography
                 variant="body1"
@@ -287,25 +293,27 @@ export default function About(props) {
                 paragraph
               >
                 <Typography color="primary" component="span">
-                  Application performance monitoring:
+                  Supervisión del rendimiento de las aplicaciones:
                 </Typography>
-                configuring application performance monitoring tools to detect
-                post-release bugs quickly.
+                configuración de las herramientas de supervisión del rendimiento
+                de las aplicaciones para detectar rápidamente los errores
+                posteriores al lanzamiento.
               </Typography>
             </Grid>
           </Grid>
           <Hidden mdDown>
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" align="center" paragraph>
-                The Agile methodology allows us to release reliable software
-                fast and introduce changes easily. The development process
-                consists of 1-4 week iterations resulting in an evolved version
-                of software shipped each time.
+                La metodología ágil nos permite lanzar rápidamente un software
+                fiable e introducir cambios con facilidad. El proceso de
+                desarrollo consiste en iteraciones de 1 a 4 semanas que dan como
+                resultado una versión evolucionada del software que se envía
+                cada vez.
               </Typography>
               <Typography variant="body1" align="center" paragraph>
-                {" "}
-                After each iteration, we get real user feedback that drives
-                informed decisions on the next development steps.
+                Después de cada iteración, obtenemos comentarios reales de los
+                usuarios que nos permiten tomar decisiones informadas sobre los
+                siguientes pasos de desarrollo.
               </Typography>
             </Grid>
           </Hidden>
@@ -331,7 +339,7 @@ export default function About(props) {
                 align={matchesMD ? "center" : "right"}
                 color="primary"
               >
-                Modular architecture
+                Arquitectura modular
               </Typography>
             </Grid>
 
@@ -341,19 +349,20 @@ export default function About(props) {
                 align={matchesMD ? "center" : "right"}
                 paragraph
               >
-                We use modular architecture patterns, such as microservices, in
-                combination with containers to develop applications as a suite
-                of independent functional components that can be effortlessly
-                ported to any environment.{" "}
+                Utilizamos patrones de arquitectura modular, como los
+                microservicios, en combinación con contenedores para desarrollar
+                aplicaciones como un conjunto de componentes funcionales
+                independientes que pueden ser portados sin esfuerzo a cualquier
+                entorno.
               </Typography>
               <Typography
                 variant="body1"
                 align={matchesMD ? "center" : "right"}
                 paragraph
               >
-                Such an approach ensures higher application reliability, better
-                maintainability and expandability, as well as shorter
-                development time.
+                Este enfoque garantiza una mayor fiabilidad de la aplicación,
+                una mejor capacidad de mantenimiento y expansión, así como un
+                menor tiempo de desarrollo.
               </Typography>
             </Grid>
           </Grid>
