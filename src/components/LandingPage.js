@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.common.orange,
     borderRadius: 50,
     height: 45,
-    width: 145,
+    width: 160,
     marginRight: 40,
     "&:hover": {
       backgroundColor: theme.palette.secondary.light,
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.learnButton,
     fontSize: "0.9rem",
     height: 45,
-    width: 145,
+    width: 155,
   },
   learnButton: {
     ...theme.typography.learnButton,
@@ -157,9 +157,9 @@ export default function LandingPage(props) {
         <Grid container justify="flex-end" alignItems="center" direction="row">
           <Grid sm item className={classes.heroTextContainer}>
             <Typography variant="h2" align="center">
-              Custom Product & Software Development
+              Desarrollo de productos y software a medida
               <br />
-              Focused On Your Success
+              Enfocados en su éxito
             </Typography>
             <Grid
               container
@@ -174,7 +174,7 @@ export default function LandingPage(props) {
                   variant="contained"
                   onClick={() => props.setValue(5)}
                 >
-                  Free Estimate
+                  Estimado gratis
                 </Button>
               </Grid>
               <Grid item>
@@ -185,7 +185,7 @@ export default function LandingPage(props) {
                   variant="outlined"
                   onClick={() => props.setValue(2)}
                 >
-                  <span style={{ marginRight: 10 }}>Learn More</span>
+                  <span style={{ marginRight: 10 }}>Leer más</span>
                   <ButtonArrow
                     width={15}
                     height={15}
@@ -216,13 +216,15 @@ export default function LandingPage(props) {
               textAlign: matchesSM ? "center" : undefined,
             }}
           >
-            <Typography variant="h4">Custom Software Development</Typography>
+            <Typography variant="h4">
+              Desarrollo de software a medida
+            </Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-              Save Energy. Save Time. Save Money.
+              Ahorra energía. Ahorra tiempo. Ahorra dinero.
             </Typography>
             <Typography variant="subtitle1">
-              Complete digital solutions, from investigation to{" "}
-              <span className={classes.specialText}>celebration.</span>
+              Soluciones digitales completas, desde la investigación hasta la{" "}
+              <span className={classes.specialText}>celebración.</span>
             </Typography>
             <Button
               component={Link}
@@ -234,7 +236,7 @@ export default function LandingPage(props) {
                 props.setSelectedIndex(1);
               }}
             >
-              <span style={{ marginRight: 10 }}>Learn More</span>
+              <span style={{ marginRight: 10 }}>Leer más</span>
               <ButtonArrow
                 width={10}
                 height={10}
@@ -266,13 +268,16 @@ export default function LandingPage(props) {
               textAlign: matchesSM ? "center" : undefined,
             }}
           >
-            <Typography variant="h4">iOS/Android App Development</Typography>
+            <Typography variant="h4">
+              Desarrollo de aplicaciones iOS/Android
+            </Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-              Extend Functionality. Extend Access. Increase Engagement.
+              Mejore la funcionalidad. Mejore el acceso. Mejore el compromiso.
             </Typography>
             <Typography variant="subtitle1">
-              Integrate your web experience or create a standalone app
-              {matchesSM ? null : <br />}with either mobile platform.
+              Integre su experiencia web o cree una aplicación independiente
+              {matchesSM ? null : <br />}con cualquiera de las plataformas
+              móviles.
             </Typography>
             <Button
               component={Link}
@@ -284,7 +289,7 @@ export default function LandingPage(props) {
                 props.setSelectedIndex(2);
               }}
             >
-              <span style={{ marginRight: 10 }}>Learn More</span>
+              <span style={{ marginRight: 10 }}>Leer más</span>
               <ButtonArrow
                 width={10}
                 height={10}
@@ -317,12 +322,13 @@ export default function LandingPage(props) {
               textAlign: matchesSM ? "center" : undefined,
             }}
           >
-            <Typography variant="h4">Website Development</Typography>
+            <Typography variant="h4">Desarrollo Web</Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-              Reach More. Discover More. Sell More.
+              Alcance más. Descubra más. Venda más.
             </Typography>
             <Typography variant="subtitle1">
-              Optimized for Search Engines, built for speed.
+              Optimizado para los motores de búsqueda, construido para la
+              velocidad.
             </Typography>
             <Button
               component={Link}
@@ -334,7 +340,7 @@ export default function LandingPage(props) {
                 props.setSelectedIndex(3);
               }}
             >
-              <span style={{ marginRight: 10 }}>Learn More</span>
+              <span style={{ marginRight: 10 }}>Leer más</span>
               <ButtonArrow
                 width={10}
                 height={10}
@@ -368,13 +374,13 @@ export default function LandingPage(props) {
               >
                 <Grid item>
                   <Typography variant="h3" gutterBottom>
-                    The Revolution
+                    La Revolución
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant="subtitle1">
-                    Visionary insights coupled with cutting-edge technology is a
-                    recipe for revolution.
+                    Las ideas visionarias unidas a la tecnología de vanguardia
+                    son una receta para la revolución.
                   </Typography>
                   <Button
                     component={Link}
@@ -383,7 +389,7 @@ export default function LandingPage(props) {
                     variant="outlined"
                     onClick={() => props.setValue(2)}
                   >
-                    <span style={{ marginRight: 10 }}>Learn More</span>
+                    <span style={{ marginRight: 10 }}>Leer más</span>
                     <ButtonArrow
                       width={15}
                       height={15}
@@ -425,9 +431,11 @@ export default function LandingPage(props) {
                 direction="column"
               >
                 <Typography variant="h2" style={{ color: "white" }}>
-                  About Us
+                  Sobre nosotros
                 </Typography>
-                <Typography variant="subtitle2">Let's get personal.</Typography>
+                <Typography variant="subtitle2">
+                  Hagámoslo de un modo personal.
+                </Typography>
                 <Grid item>
                   <Button
                     component={Link}
@@ -437,7 +445,7 @@ export default function LandingPage(props) {
                     className={classes.learnButton}
                     onClick={() => props.setValue(3)}
                   >
-                    <span style={{ marginRight: 10 }}>Learn More</span>
+                    <span style={{ marginRight: 10 }}>Leer más</span>
                     <ButtonArrow width={10} height={10} fill="white" />
                   </Button>
                 </Grid>
@@ -453,10 +461,10 @@ export default function LandingPage(props) {
             >
               <Grid container direction="column">
                 <Typography variant="h2" style={{ color: "white" }}>
-                  Contact Us
+                  Contacto
                 </Typography>
                 <Typography variant="subtitle2">
-                  Say hello!{" "}
+                  ¡Salúdanos!{" "}
                   <span role="img" aria-label="waving hand">
                     👋🏻
                   </span>
@@ -470,7 +478,7 @@ export default function LandingPage(props) {
                     className={classes.learnButton}
                     onClick={() => props.setValue(4)}
                   >
-                    <span style={{ marginRight: 10 }}>Learn More</span>
+                    <span style={{ marginRight: 10 }}>Leer más</span>
                     <ButtonArrow width={10} height={10} fill="white" />
                   </Button>
                 </Grid>
