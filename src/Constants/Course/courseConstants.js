@@ -1,212 +1,212 @@
 export const learnInfo = [
-  "Learn C# from scratch. A powerful modern language.",
-  "Gain an excellent general knowledge of video game design.",
-  "Transfer your knowledge to .NET, other languages, and more.",
-  "Develop a positive attitude to problem solving.",
-  "Learn good coding and design patterns.",
+  "Aprenda C# desde cero. Un potente lenguaje moderno.",
+  "Adquiera un excelente conocimiento general del diseño de videojuegos.",
+  "Transfiera sus conocimientos a .NET, otros lenguajes y más.",
+  "Adquiera una actitud positiva para la resolución de problemas.",
+  "Aprenda buenos patrones de codificación y diseño.",
 ];
 
 export const learnInfo2 = [
-  "Get experience using Unity 2017 - a very versatile 3D tool.",
-  "Make 2.5D and 3D games in Unity.",
-  "Learn how object oriented programming works in practice.",
-  "Practical exercises EVERY VIDEO to build actual skills.",
-  "Learn to use source control, a valuable tool for working in small teams.",
+  "Obtenga experiencia usando Unity 2020 - una herramienta 3D muy versátil.",
+  "Crear juegos 2.5D y 3D en Unity.",
+  "Aprenda cómo funciona la programación orientada a objetos en la práctica.",
+  "Ejercicios prácticos en CADA VÍDEO para construir habilidades reales.",
+  "Aprende a utilizar el control de versiones, una valiosa herramienta para trabajar en equipos pequeños.",
 ];
 
 export const courseContent = [
   {
-    title: "Introduction & Setup (New Unity 2020.1 Content) ",
-    length: "7 lectures • 50min",
+    title: "Introducción y configuración (Contenido de Unity 2020.1) ",
+    length: "7 lecciones • 50min",
     content: [
       {
-        title: "Welcome To The Course ",
+        title: "Bienvenido al curso ",
         length: "03:54",
       },
       {
-        title: "New Updated Content",
+        title: "Nuevo contenido actualizado",
         length: "05:41",
       },
       {
-        title: "Download Unity & VS Code",
+        title: "Descargar Unity y VS Code",
         length: "00:31",
       },
       {
-        title: "Introducing Unity",
+        title: "Introducción a Unity",
         length: "05:41",
       },
       {
-        title: "Introducing Prefabs",
+        title: "Introducción a Prefabs",
         length: "13:08",
       },
       {
-        title: "Your First Script ",
+        title: "Tu primer script ",
         length: "12:37",
       },
       {
-        title: "Community & Support ",
+        title: "Comunidad y soporte ",
         length: "04:05",
       },
     ],
   },
   {
-    title: "Obstacle Course (New Unity 2020.1 Content) ",
-    length: "6 lectures • 3hr 1min",
+    title: "Circuito de obstáculos (Contenido de Unity 2020.1) ",
+    length: "6 lecciones • 3hr 1min",
     content: [
       {
-        title: "Section Intro - Obstacle Course ",
+        title: "Sección de Intro - Carrera de obstáculos ",
         length: "54:34",
       },
       {
-        title: "Introducing Variables ",
+        title: "Introducción a las variables ",
         length: "133:21",
       },
       {
-        title: "Introduction To Methods ",
+        title: "Introducción a los métodos ",
         length: "21:48",
       },
       {
-        title: "Caching A Reference ",
+        title: "Caché de una referencia ",
         length: "5:16",
       },
       {
-        title: "Using Tags ",
+        title: "Uso de etiquetas ",
         length: "4:42",
       },
       {
-        title: "Wrap Up - Obstacle Course ",
+        title: "Cierre - Circuito de obstáculos",
         length: "6:09",
       },
     ],
   },
   {
-    title: "Project Boost (New Unity 2020.1 Content) ",
-    length: "4 lectures • 5hr 2min",
+    title: "Proyecto Boost (Contenido de Unity 2020.1) ",
+    length: "4 lecciones • 5hr 2min",
     content: [
       {
-        title: "Game Design - Project Boost ",
+        title: "Diseño de Juego - Proyecto Boost ",
         length: "75:56",
       },
       {
-        title: "Introducing Classes ",
+        title: "Introducción a las clases ",
         length: "74:45",
       },
       {
-        title: "How To Trigger Particles ",
+        title: "Cómo activar las partículas ",
         length: "76:21",
       },
       {
-        title: "Designing Level Moments",
+        title: "Diseño de momentos de nivel",
         length: "73:32",
       },
     ],
   },
   {
-    title: "Argon Assault (New Unity 2020.1 Content) ",
-    length: "5 lectures • 7hr 9min",
+    title: "Argon Assault (Contenido de Unity 2020.1) ",
+    length: "5 lecciones • 7hr 9min",
     content: [
       {
-        title: "Game Design - Argon Assault ",
+        title: "Diseño de Juego - Argon Assault ",
         length: "83:52",
       },
       {
-        title: "Texturing Terrain In Unity ",
+        title: "Textura del terreno en Unity ",
         length: "87:23",
       },
       {
-        title: "Animate Enemy Using Timeline ",
+        title: "Animar al enemigo con una línea de tiempo ",
         length: "85:11",
       },
       {
-        title: "Start Moving Our Player ",
+        title: "Empezar a mover a nuestro jugador ",
         length: "84:31",
       },
       {
-        title: "Understanding Collisions & Triggers ",
+        title: "Colisiones y los disparadores ",
         length: "86:26",
       },
     ],
   },
   {
-    title: "Realm Rush (New Unity 2020.1 Content) ",
-    length: "7 lectures • 7hr 7min",
+    title: "Realm Rush (Contenido de Unity 2020.1) ",
+    length: "7 lecciones • 7hr 7min",
     content: [
       {
-        title: "Realm Rush Game Design ",
+        title: "Diseño del juego Realm Rush",
         length: "61:03",
       },
       {
-        title: "Coordinate System ",
+        title: "Sistema de coordenadas ",
         length: "58:34",
       },
       {
-        title: "Smooth Enemy Movement ",
+        title: "Movimiento suave del enemigo ",
         length: "60:40",
       },
       {
-        title: "Damaging Enemies ",
+        title: "Dañando a los enemigos",
         length: "62:12",
       },
       {
-        title: "Debugging Tools ",
+        title: "Herramientas de depuración ",
         length: "59:22",
       },
       {
-        title: "Increasing Difficulty ",
+        title: "Aumento de la dificultad",
         length: "60:56",
       },
       {
-        title: "Playtest and Balance ",
+        title: "Prueba de juego y balance ",
         length: "58:04",
       },
     ],
   },
   {
-    title: "Zombie Runner - First Person Shooter (Original Content) ",
-    length: "5 lectures • 7hr 21min",
+    title: "Zombie Runner - FPS (contenido original) ",
+    length: "5 lecciones • 7hr 21min",
     content: [
       {
-        title: "Zombie Runner Game Design ",
+        title: "Diseño del juego Zombie Runner ",
         length: "84:43",
       },
       {
-        title: "Adding First Person Controller ",
+        title: "Añadir el controlador en primera persona ",
         length: "79:14",
       },
       {
-        title: "Make A Prototyping Sandbox ",
+        title: "Hacer una caja de arena de prototipos ",
         length: "80:04",
       },
       {
-        title: "Enemy AI - Attack If Provoked ",
+        title: "IA enemiga - Ataque si es provocado ",
         length: "87:24",
       },
       {
-        title: "Game Over User Interface ",
+        title: "Interfaz de usuario de Game Over ",
         length: "92:02",
       },
     ],
   },
   {
-    title: "Updates and Important Messages ",
-    length: "1 lecture • 1min",
+    title: "Actualizaciones y mensajes importantes ",
+    length: "1 lección • 1min",
     content: [
       {
-        title: "Updates and Important Messages",
+        title: "Actualizaciones y mensajes importantes",
         length: "01:02",
       },
     ],
   },
   {
-    title: "Continuing Your GameDev Journey ",
-    length: "2 lectures • 1min",
+    title: "Continuación de tu viaje GameDev ",
+    length: "2 lecciones • 1min",
     content: [
       {
-        title: "Congratulations ",
+        title: "Felicidades ",
         length: "01:07",
       },
       {
-        title: "BONUS LECTURE: Our Other Courses ",
+        title: "LECCIÓN DE BONO: Nuestros otros cursos",
         length: "00:22",
       },
     ],
@@ -215,28 +215,28 @@ export const courseContent = [
 
 export const description1 = [
   {
-    title: "In this Unity course, you will:",
+    title: "En este curso de Unity, vas a:",
     content: [
-      "Master C# concepts such as variables and if statements",
-      "Detect collisions, receive user input, and create player movements",
-      "Create power ups including triple shots, laser beams, speed boosts, and shields",
-      "Apply shaders that transform your game backgrounds",
-      "Create enemies with basic AI behavior ",
-      "Collect and destroy game objects ",
-      "Implement sound effects, background music, and particle effects",
-      "Activate and use Unity’s Team Collaboration service",
-      "Navigate the Unity Engine and discover unique features such as the Asset Store",
-      "Deploy your game to over 20 web or mobile platforms using Unity",
-      "And more! ",
+      "Dominar conceptos de C# como las variables y las sentencias if",
+      "Detectar colisiones, recibir entradas del usuario y crear movimientos del jugador",
+      "Crear potenciadores, incluyendo disparos triples, rayos láser, aumentos de velocidad y escudos",
+      "Aplicar shaders que transformen los fondos del juego",
+      "Crear enemigos con un comportamiento básico de IA",
+      "Recoger y destruir objetos del juego",
+      "Implementar efectos de sonido, música de fondo y efectos de partículas",
+      "Activar y utilizar el servicio de colaboración en equipo de Unity",
+      "Navegar por el motor Unity y descubrir características únicas como el Asset Store ",
+      "Despliega tu juego en más de 20 plataformas web o móviles utilizando Unity",
+      "¡Y mucho más! ",
     ],
   },
   {
-    title: "Who this course is for:",
+    title: "A quién va dirigido este curso:",
     content: [
-      "The ideal student for this course is someone who is interested in game development with Unity and C# and is looking for an interactive, project-based course.",
-      "People interested in developing commercial quality 2D and 3D games either professionally or as a hobby.",
-      "Anyone seeking an understanding of best coding practices such as organization with your project and optimal development workflow that are essential to game development.",
-      "This course is not for someone who is an advanced game developer. This course is also not for students who are not interested in learning to code as you will get an introduction to the fundamentals of C# programming.",
+      "El alumno ideal para este curso es alguien que esté interesado en el desarrollo de juegos con Unity y C# y que busque un curso interactivo y basado en proyectos",
+      "Personas interesadas en desarrollar juegos 2D y 3D de calidad comercial, ya sea profesionalmente o como hobby",
+      "Cualquiera que busque una comprensión de las mejores prácticas de codificación, como la organización con su proyecto y el flujo de trabajo de desarrollo óptimo que son esenciales para el desarrollo de juegos",
+      "Este curso no es para alguien que sea un desarrollador de juegos avanzado. Este curso tampoco es para estudiantes que no estén interesados en aprender a codificar, ya que obtendrás una introducción a los fundamentos de la programación en C#.",
     ],
   },
 ];

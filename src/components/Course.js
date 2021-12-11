@@ -264,7 +264,7 @@ const Course = (props) => {
               variant="body1"
               style={{ fontSize: "1.2rem", fontWeight: "bold" }}
             >
-              88% off
+              88% de descuento
             </Typography>
           </Grid>
         </Grid>
@@ -276,7 +276,7 @@ const Course = (props) => {
 
           <Grid item>
             <Typography variant="body2">
-              13 hours left at this price!
+              ¡Quedan 13 horas a este precio!
             </Typography>
           </Grid>
         </Grid>
@@ -303,7 +303,7 @@ const Course = (props) => {
                 size="large"
                 style={{ width: matchesXS ? "15rem" : "18rem" }}
               >
-                Add to Cart
+                Añadir al carrito
               </Button>
             </Grid>
 
@@ -322,13 +322,13 @@ const Course = (props) => {
               size="large"
               style={{ width: matchesXS ? "19rem" : "23.5rem" }}
             >
-              Buy Now
+              Comprar Ahora
             </Button>
           </Grid>
 
           <Grid item align="center">
             <Typography variant="body1" style={{ fontSize: "1.15rem" }}>
-              30-Day Money-Back Guarantee
+              Garantía de devolución del dinero en 30 días
             </Typography>
           </Grid>
         </Grid>
@@ -342,7 +342,7 @@ const Course = (props) => {
                 marginTop: "1rem",
               }}
             >
-              This course includes:
+              Este curso incluye:
             </Typography>
           </Grid>
 
@@ -352,7 +352,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography style={{ fontSize: "1rem" }} variant="subtitle1">
-                30 hours on-demand video
+                30 horas de vídeo a su disposición
               </Typography>
             </Grid>
           </Grid>
@@ -363,7 +363,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography style={{ fontSize: "1rem" }} variant="subtitle1">
-                2 Articles
+                2 Articulos
               </Typography>
             </Grid>
           </Grid>
@@ -374,7 +374,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography style={{ fontSize: "1rem" }} variant="subtitle1">
-                Full lifetime access
+                Acceso total de por vida
               </Typography>
             </Grid>
           </Grid>
@@ -385,7 +385,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography style={{ fontSize: "1rem" }} variant="subtitle1">
-                Access on mobile and TV
+                Acceso en el móvil y la televisión
               </Typography>
             </Grid>
           </Grid>
@@ -396,7 +396,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography style={{ fontSize: "1rem" }} variant="subtitle1">
-                Certificate of completion
+                Certificado de finalización
               </Typography>
             </Grid>
           </Grid>
@@ -417,7 +417,7 @@ const Course = (props) => {
               variant="text"
               color="primary"
             >
-              Apply Coupon
+              Aplicar el cupón
             </Button>
           </Grid>
 
@@ -430,7 +430,7 @@ const Course = (props) => {
               variant="text"
               color="primary"
             >
-              Gift this course
+              Regalar este curso
             </Button>
           </Grid>
         </Grid>
@@ -445,17 +445,25 @@ const Course = (props) => {
         >
           <Grid item>
             <Typography style={{ fontSize: "1.3rem" }} variant="h5">
-              Training 5 or more people?
+              ¿Entrenar a 5 o más personas?
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" style={{ fontSize: "1.1rem" }}>
-              Get your team access to 6,000+ top Amp courses anytime, anywhere.
+              Consiga que su equipo tenga acceso a más de 6.000 cursos de Amp en
+              cualquier momento y lugar.
             </Typography>
           </Grid>
           <Grid item>
-            <Button variant="outlined" size="large" fullWidth color="primary">
-              Download Example Game
+            <Button
+              variant="outlined"
+              size="large"
+              fullWidth
+              color="primary"
+              href="https://drive.google.com/file/d/1B8Gst0oclukoS1fHh8da7gXghjB7v0NB/view?usp=sharing"
+              target="_blank"
+            >
+              Descargar un juego de ejemplo
             </Button>
           </Grid>
         </Grid>
@@ -479,7 +487,7 @@ const Course = (props) => {
           gutterBottom
           align={matchesMD ? "center" : undefined}
         >
-          Top companies offer this course to their employees
+          Las mejores empresas ofrecen este curso a sus empleados
         </Typography>
         <Typography
           variant="body1"
@@ -487,9 +495,8 @@ const Course = (props) => {
           component="div"
           gutterBottom
         >
-          This course was selected for our collection of top-rated courses
-          trusted by businesses worldwide. Learn moreTop companies offer this
-          course to their employees
+          Este curso ha sido seleccionado para nuestra colección de cursos mejor
+          valorados y en los que confían las empresas.
         </Typography>
 
         <Grid
@@ -594,21 +601,22 @@ const Course = (props) => {
       style={{ maxWidth: matchesXS ? "22rem" : matchesSM ? "35em" : "46.5rem" }}
     >
       <Grid item>
-        <Typography variant="h4">Requirements</Typography>
+        <Typography variant="h4">Requisitos</Typography>
       </Grid>
       <Grid item container direction="column">
         <ul>
           <li>
             <Grid item>
               <Typography variant="body1" style={{ fontSize: "1rem" }}>
-                PC or Mac capable of running Unity 2017 or later.
+                PC o Mac capaz de ejecutar Unity 2017 o posterior.
               </Typography>
             </Grid>
           </li>
           <li>
             <Grid item>
               <Typography variant="body1" style={{ fontSize: "1rem" }}>
-                Regular internet access for Q&A and community.
+                Acceso regular a Internet para las preguntas y respuestas y la
+                comunidad.
               </Typography>
             </Grid>
           </li>
@@ -627,7 +635,7 @@ const Course = (props) => {
         >
           <Grid container>
             <Grid item>
-              <Typography variant="h4">Description</Typography>
+              <Typography variant="h4">Descripción</Typography>
             </Grid>
           </Grid>
         </AccordionSummary>
@@ -635,31 +643,33 @@ const Course = (props) => {
           <Grid container direction="column" style={{ width: "100%" }}>
             <Grid item style={{ marginBottom: "1em" }}>
               <Typography style={{ fontSize: "1rem" }} variant="body1">
-                If you are interested in developing amazing, commercial quality
-                games that are playable on a variety of platforms, then you've
-                come to the right place. This Unity course is the only one of
-                its kind that is approved by Unity Technologies on Udemy. What
-                better way to learn how to develop games in Unity than with
-                their authorized course? The Ultimate Guide to Game Development
-                with Unity introduces you to the Unity Engine and to the
-                fundamentals of C# programming. The course then dives into
-                developing your first 2D and 3D games. You will discover how to
-                set your games apart from the crowd by polishing them with
-                Unity’s latest features, including post-processing effects and
-                the animation system.
+                {" "}
+                Si está interesado en desarrollar juegos sorprendentes y de
+                calidad comercial que son jugables en una variedad de
+                plataformas, entonces usted ha llegado al lugar adecuado. Este
+                curso de Unity es el único de de este tipo aprobado por Unity
+                Technologies en Udemy. ¿Qué mejor manera de aprender a
+                desarrollar juegos en Unity que con su curso autorizado? La Guía
+                definitiva para el desarrollo de juegos con Unity te introduce
+                en el motor Unity y en los fundamentos de la programación en C#.
+                El curso luego se sumerge en el desarrollo de tus primeros
+                juegos en 2D y 3D. Descubrirá cómo distinguir sus juegos de los
+                demás puliéndolos con las últimas características de Unity,
+                incluyendo los efectos de post-procesamiento y el sistema de
+                animación.
               </Typography>
             </Grid>
             <Grid item style={{ marginBottom: "1em" }}>
               <Typography style={{ fontSize: "1rem" }} variant="body1">
-                This Unity course also includes over 50 interactive challenges
-                (New Content Added Weekly!) where you can test your knowledge
-                with concepts you've just learned. These challenges will help
-                you build two commercial quality games: a 2D Galaxy Shooter Game
-                with polished sprites and cinematic effects, and a 3D first
-                person controller game. Get access to the unique artwork
-                provided by this Unity course and add sophisticated features to
-                your games that make you look like you’ve been programming for
-                years.{" "}
+                Este curso de Unity también incluye más de 50 retos interactivos
+                (¡nuevo contenido añadido semanalmente!) en los que podrás poner
+                a prueba tus conocimientos con los conceptos que acabas de
+                aprender. Estos desafíos te ayudarán a construir dos juegos de
+                calidad comercial: un juego de disparos de galaxias en 2D con
+                sprites pulidos y efectos cinemáticos, y un juego de control en
+                primera persona en 3D. Accede a las obras de arte exclusivas que
+                ofrece este curso de Unity y añade sofisticadas características
+                a tus juegos que te harán parecer que llevas años programando.
               </Typography>
             </Grid>
             {description1.map((description, index) => (
@@ -722,21 +732,21 @@ const Course = (props) => {
             className={classes.heroSubtitle}
             style={{ fontSize: "1.2rem" }}
           >
-            Development > Game Development > 3D Game Development
+            Desarrollo > Desarrollo de juegos > Desarrollo de juegos 3D
           </Typography>
           <Typography variant="h2" style={{ fontSize: "1.8rem" }}>
-            Complete C# Unity Game Developer 3D
+            Desarrollador completo de juegos C# Unity 3D
           </Typography>
           <Typography variant="subtitle1" style={{ marginBottom: ".5em" }}>
-            Design & Develop Video Games. Learn C# in Unity Engine. Code Your
-            first 3D Unity games for web, Mac & PC.
+            Diseña y desarrolla videojuegos. Aprende C# en el motor Unity.
+            Codifica tus primeros juegos Unity 3D para web, Mac y PC.
           </Typography>
           <Typography variant="body2" gutterBottom>
-            <span style={{ color: "#FFBA60" }}>(33,299 ratings)</span> 150,224
-            students{" "}
+            <span style={{ color: "#FFBA60" }}>(33,299 evaluaciones)</span>{" "}
+            150,224 estudiantes{" "}
           </Typography>
           <Typography variant="body2" gutterBottom>
-            Created by <span style={{ color: "#FFBA60" }}>Joe Contreras</span>{" "}
+            Creado por <span style={{ color: "#FFBA60" }}>Joe Contreras</span>{" "}
             <span style={{ color: "#FFBA60" }}>, Jose Luis Gutierrez</span>{" "}
             <span style={{ color: "#FFBA60" }}>, Saul Gutierrez</span>{" "}
             <span style={{ color: "#FFBA60" }}>, Paola Zamora</span>{" "}
@@ -751,7 +761,7 @@ const Course = (props) => {
             </Grid>
             <Grid item>
               <Typography variant="body2" gutterBottom>
-                Last updated 11/2021{" "}
+                Última actualización 11/2021{" "}
               </Typography>
             </Grid>
             <Grid item>
@@ -812,13 +822,13 @@ const Course = (props) => {
 
           <Grid item align={matchesMD ? "center" : undefined}>
             <Typography color="primary" variant="h4">
-              Course content
+              Contenido del curso
             </Typography>
           </Grid>
 
           <Grid item align={matchesMD ? "center" : undefined}>
             <Typography variant="subtitle1" style={{ fontSize: "1rem" }}>
-              10 sections • 126 lectures • 28h 9m total length
+              8 secciones • 126 lecciones • 28h 9m de duración total
             </Typography>
           </Grid>
 
