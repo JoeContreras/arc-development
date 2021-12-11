@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.common.orange,
     borderRadius: 50,
     height: 70,
-    width: 195,
+    width: 230,
     marginRight: "5em",
     marginLeft: "2em",
     fontSize: "1.5rem",
@@ -214,14 +214,14 @@ const Contact = (props) => {
                 style={{ lineHeight: 1 }}
                 align={matchesMD ? "center" : undefined}
               >
-                Contact Us
+                Contáctanos
               </Typography>
               <Typography
                 variant="body1"
                 style={{ color: theme.palette.common.blue }}
                 align={matchesMD ? "center" : undefined}
               >
-                We're waiting.
+                Estamos esperando.
               </Typography>
             </Grid>
 
@@ -242,7 +242,7 @@ const Contact = (props) => {
                     style={{ color: "inherit", textDecoration: "none" }}
                     href="tel:6188007471"
                   >
-                    (555) 555-5555
+                    (618) 800-7471
                   </a>
                 </Typography>
               </Grid>
@@ -273,7 +273,7 @@ const Contact = (props) => {
             <Grid item container style={{ width: "20em" }} direction="column">
               <Grid item style={{ marginBottom: "0.5em" }}>
                 <TextField
-                  label="Name"
+                  label="Nombre"
                   id="name"
                   name="name"
                   value={name}
@@ -295,7 +295,7 @@ const Contact = (props) => {
               </Grid>
               <Grid item style={{ marginBottom: "0.5em" }}>
                 <TextField
-                  label="Phone"
+                  label="Telefono"
                   name="phone"
                   id="phone"
                   fullWidth
@@ -498,8 +498,8 @@ const Contact = (props) => {
           <Grid container direction="column">
             <Grid item align={matchesMD ? "center" : undefined}>
               <Typography variant="h2">
-                Simple Software. <br />
-                Revolutionary results
+                Software Simple. <br />
+                Resultados Revolucionarios
               </Typography>
               <Typography
                 variant="subtitle1"
@@ -508,7 +508,7 @@ const Contact = (props) => {
                   color: "#FFBA60",
                 }}
               >
-                Take advantage of the 21st Century.
+                Aprovecha el Siglo XXI.
               </Typography>
               <Grid justifyContent={matchesMD ? "center" : undefined} container>
                 <Button
@@ -520,7 +520,7 @@ const Contact = (props) => {
                     setValue(2);
                   }}
                 >
-                  <span style={{ marginRight: 5 }}>Learn More</span>
+                  <span style={{ marginRight: 5 }}>Más información</span>
                   <ButtonArrow
                     height={10}
                     width={10}
@@ -541,7 +541,7 @@ const Contact = (props) => {
               setValue(8);
             }}
           >
-            Free Estimate
+            {matchesMD ? "Estimación" : "Estimación Gratis"}
           </Button>
         </Grid>
       </Grid>
