@@ -94,19 +94,19 @@ export default function Websites(props) {
         >
           <Grid item>
             <Typography variant="h2" gutterBottom>
-              Website Development
+              Desarrollo Web
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              Having a website is a necessity in today's business world. They
-              give you one central, public location to let people know who you
-              are, what you do, and why you are the best at it.
+              Tener un sitio web es una necesidad en el mundo empresarial
+              actual. Te dan una ubicación central y pública para que la gente
+              sepa quién eres, lo que haces y por qué eres el mejor en ello.
             </Typography>
             <Typography variant="body1" paragraph>
-              From simply having your hours posted to having a full fledged
-              online store, making yourself as accessible to possible users
-              drives growth and enables you to reach new customers.
+              Desde el simple hecho de publicar su horario hasta tener una
+              tienda online completa, hacerse accesible a los posibles usuarios
+              impulsa el crecimiento y le permite llegar a nuevos clientes.
             </Typography>
           </Grid>
         </Grid>
@@ -139,7 +139,7 @@ export default function Websites(props) {
           <Grid container direction="column">
             <Grid item align={matchesSM ? "center" : undefined}>
               <Typography variant="h4" gutterBottom>
-                Analytics
+                Análisis
               </Typography>
             </Grid>
             <Grid item>
@@ -157,9 +157,10 @@ export default function Websites(props) {
           align={matchesSM ? "center" : undefined}
         >
           <Typography variant="body1">
-            Knowledge is power, and data is 21st century gold. Analysing this
-            data can reveal hidden patterns and trends in your business,
-            empowering you to make smarter decisions with measurable effects.
+            El conocimiento es poder, y los datos son el oro del siglo XXI. El
+            análisis de estos datos puede revelar patrones y tendencias ocultas
+            en tu negocio, permitiéndote tomar decisiones más inteligentes con
+            efectos medibles.
           </Typography>
         </Grid>
       </Grid>
@@ -192,11 +193,11 @@ export default function Websites(props) {
           align={matchesSM ? "center" : undefined}
         >
           <Typography variant="body1" paragraph>
-            It's no secret that people like to shop online.
+            No es ningún secreto que a la gente le gusta comprar online.
           </Typography>
           <Typography variant="body1" paragraph>
-            In 2017 over 2.3 trillion was spent in e-commerce, and it's time for
-            your slice of that pie.
+            En 2017 se gastaron más de 2,3 billones en comercio electrónico, y
+            ha llegado el momento de que te toque tu parte de ese pastel.
           </Typography>
         </Grid>
       </Grid>
@@ -212,7 +213,7 @@ export default function Websites(props) {
           <Grid container direction="column">
             <Grid item align={matchesSM ? "center" : undefined}>
               <Typography variant="h4" gutterBottom>
-                Outreach
+                Alcance
               </Typography>
             </Grid>
             <Grid item>
@@ -227,9 +228,9 @@ export default function Websites(props) {
           align={matchesSM ? "center" : undefined}
         >
           <Typography variant="body1">
-            Draw people in with a dazzling website. Showing off your products
-            online is a great way to help customers decide what's right for them
-            before visiting in person.
+            Atrae a la gente con un sitio web deslumbrante. Mostrar tus
+            productos en línea es una excelente manera de ayudar a los clientes
+            a decidir qué es lo que les conviene antes de visitarlo en persona.
           </Typography>
         </Grid>
       </Grid>
@@ -247,7 +248,7 @@ export default function Websites(props) {
           <Grid container direction="column" alignItems="center">
             <Grid item align={matchesSM ? "center" : undefined}>
               <Typography variant="h4" gutterBottom>
-                Search Engine <br /> Optimization
+                Optimización del <br /> Motor de Búsqueda
               </Typography>
             </Grid>
             <Grid item>
@@ -262,14 +263,15 @@ export default function Websites(props) {
           align={matchesSM ? "center" : undefined}
         >
           <Typography variant="body1" paragraph>
-            How often have you ever been to the second page of Google results.
+            ¿Cuántas veces has estado en la segunda página de resultados de
+            Google?
           </Typography>
           <Typography variant="body1" paragraph>
-            If you're like us, probably never.
+            Si eres como nosotros, probablemente nunca.
           </Typography>
           <Typography variant="body1" paragraph>
-            Customers don't go there either, so make sure your website is
-            designed to end up at the top.
+            Los clientes tampoco van allí, así que asegúrese de que su sitio web
+            está diseñado para terminar en la parte superior.
           </Typography>
         </Grid>
       </Grid>
