@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.common.orange,
     borderRadius: 50,
     height: 70,
-    width: 195,
+    width: 210,
     marginRight: "5em",
     marginLeft: "2em",
     fontSize: "1.5rem",
@@ -111,11 +111,11 @@ const CallToAction = (props) => {
           <Grid container direction="column">
             <Grid item>
               <Typography variant="h2">
-                Simple Software. <br />
-                Revolutionary results
+                Software Simple. <br />
+                Resultados Revolucionarios
               </Typography>
               <Typography variant="subtitle1" style={{ fontSize: "1.5rem" }}>
-                Take advantage of the 21st Century.
+                Aprovecha el Siglo XXI.
               </Typography>
               <Grid justifyContent={matchesSM ? "center" : undefined} container>
                 <Button
@@ -127,7 +127,7 @@ const CallToAction = (props) => {
                     setValue(2);
                   }}
                 >
-                  <span style={{ marginRight: 5 }}>Learn More</span>
+                  <span style={{ marginRight: 5 }}>Más información</span>
                   <ButtonArrow
                     height={10}
                     width={10}
@@ -148,7 +148,7 @@ const CallToAction = (props) => {
               setValue(8);
             }}
           >
-            Free Estimate
+            Estimado Gratis
           </Button>
         </Grid>
       </Grid>
