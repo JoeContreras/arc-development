@@ -73,7 +73,7 @@ const Services = (props) => {
           variant="h2"
           gutterBottom
         >
-          Services
+          Servicios
         </Typography>
       </Grid>
       {/*-----iOS/Android App Block-----*/}
@@ -91,13 +91,15 @@ const Services = (props) => {
             width: matchesSM ? undefined : "35em",
           }}
         >
-          <Typography variant="h4">iOS/Andriod App Devolpment</Typography>
+          <Typography variant="h4">
+            Desarrollo de aplicaciones iOS/Android
+          </Typography>
           <Typography variant="subtitle1" className={classes.subtitle}>
-            Extend Functionality. Extend Access. Extend Engagement
+            Mejore la funcionalidad. Mejore el acceso. Mejore el compromiso.
           </Typography>
           <Typography variant="subtitle1">
-            Integrate your web experience or create a standalone{" "}
-            {matchesSM ? null : <br />}
+            Integre su experiencia web o cree una aplicación independiente con
+            cualquiera de las plataformas móviles.
           </Typography>
           <Button
             component={Link}
@@ -109,7 +111,7 @@ const Services = (props) => {
               setSelectedIndex(2);
             }}
           >
-            <span style={{ marginRight: 10 }}>Learn More</span>
+            <span style={{ marginRight: 10 }}>Leer más</span>
             <ButtonArrow
               height={10}
               width={10}
@@ -148,13 +150,15 @@ const Services = (props) => {
               textAlign: matchesSM ? "center" : undefined,
             }}
           >
-            <Typography variant="h4">Custom Software Development</Typography>
+            <Typography variant="h4">
+              Desarrollo de software a medida
+            </Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-              Save Energy. Save Time. Save Money.
+              Ahorra energía. Ahorra tiempo. Ahorra dinero.
             </Typography>
             <Typography variant="subtitle1">
-              Complete digital solutions, from investigation to{" "}
-              <span className={classes.specialText}>celebration.</span>
+              Soluciones digitales completas, desde la investigación hasta la{" "}
+              <span className={classes.specialText}>celebración.</span>
             </Typography>
             <Button
               component={Link}
@@ -166,7 +170,7 @@ const Services = (props) => {
                 setSelectedIndex(1);
               }}
             >
-              <span style={{ marginRight: 10 }}>Learn More</span>
+              <span style={{ marginRight: 10 }}>Leer más</span>
               <ButtonArrow
                 height={10}
                 width={10}
@@ -199,12 +203,13 @@ const Services = (props) => {
               width: matchesSM ? undefined : "35em",
             }}
           >
-            <Typography variant="h4">Website Development</Typography>
+            <Typography variant="h4">Desarrollo Web</Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-              Reach More. Discover More. Sell More.
+              Alcance más. Descubra más. Venda más.
             </Typography>
             <Typography variant="subtitle1">
-              Optimized for search engines, built for speed.
+              Optimizado para los motores de búsqueda, construido para la
+              velocidad.
             </Typography>
             <Button
               component={Link}
@@ -216,7 +221,7 @@ const Services = (props) => {
                 setSelectedIndex(3);
               }}
             >
-              <span style={{ marginRight: 10 }}>Learn More</span>
+              <span style={{ marginRight: 10 }}>Leer más</span>
               <ButtonArrow
                 height={10}
                 width={10}
