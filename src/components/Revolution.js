@@ -479,7 +479,10 @@ export default function Revolution(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        style={{ backgroundColor: "#e5c9ac", height: "90em" }}
+        style={{
+          backgroundColor: "#e5c9ac",
+          height: matchesMD ? "100em" : "90em",
+        }}
       >
         <Grid
           item
