@@ -99,25 +99,27 @@ const MobileApps = (props) => {
         >
           <Grid item>
             <Typography variant="h2" gutterBottom>
-              iOS/Android Development
+              Desarrollo iOS/Android
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              Mobile Apps allow you to take your tools on the go.
+              Las aplicaciones móviles te permiten llevar tus herramientas sobre
+              la marcha.
             </Typography>
             <Typography variant="body1" paragraph>
-              Weather you want an app for your customers, your employee, or
-              yourself, we can build cross-platform native solutions for any
-              part of your business process. This opens you up to a whole new
-              world by taking advantage of your phone features like the camara,
-              GPS, push notifications, and more.
+              Ya sea que quieras una aplicación para tus clientes, tus empleados
+              o para ti mismo, podemos construir soluciones nativas
+              multiplataforma para cualquier parte de tu proceso de negocio.
+              Esto te abre todo un mundo nuevo aprovechando las características
+              de tu teléfono como la cámara, el GPS, las notificaciones push y
+              mucho más.
             </Typography>
             <Typography variant="body1" paragraph>
-              Convenience. Connection
+              Comodidad. Conexión
             </Typography>
             <Typography variant="body1" paragraph>
-              We create exactly what you want, exactly how you want it.
+              Creamos exactamente lo que quieres, exactamente como lo quieres.
             </Typography>
           </Grid>
         </Grid>
@@ -153,19 +155,19 @@ const MobileApps = (props) => {
           align={matchesSM ? "center" : undefined}
         >
           <Grid item>
-            <Typography variant="h4">Integration</Typography>
+            <Typography variant="h4">Integración</Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              Our technology enables an innate interconnection between web and
-              mobile applications, putting everything you need in one convenient
-              place.
+              Nuestra tecnología permite una interconexión intrínseca entre las
+              aplicaciones web y móviles, poniendo todo lo que necesitas en un
+              solo lugar.
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              This allows you to extend your reach, reinvent interactions, and
-              develop a stronger relationship with your users than ever before.
+              Esto te permite ampliar tu alcance, reinventar las interacciones y
+              desarrollar una relación más fuerte que nunca con tus usuarios.
             </Typography>
           </Grid>
         </Grid>
@@ -181,18 +183,21 @@ const MobileApps = (props) => {
           align={matchesSM ? "center" : "right"}
         >
           <Grid item>
-            <Typography variant="h4">Simultaneous Platform Support</Typography>
-          </Grid>
-          <Grid item>
-            <Typography variant="body1" paragraph>
-              Our cutting edge development process allows us to create apps for
-              iPhone, Android and tablets - all at the same time.
+            <Typography variant="h4">
+              Soporte de plataformas simultáneas
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              This significantly reduces costs and creates a more unified brand
-              experience across all devices.
+              Nuestro proceso vanguardista de desarrollo nos permite crear
+              aplicaciones para iPhone, Android y tabletas, todo al mismo
+              tiempo.
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="body1" paragraph>
+              Esto reduce significativamente los costes y crea una experiencia
+              de marca más unificada en todos los dispositivos.
             </Typography>
           </Grid>
         </Grid>
@@ -209,7 +214,7 @@ const MobileApps = (props) => {
         <Grid item container direction="column" md alignItems="center">
           <Grid item>
             <Typography variant="h4" gutterBottom>
-              Extend Functionality
+              Ampliar la Funcionalidad
             </Typography>
           </Grid>
           <Grid item>
@@ -229,7 +234,7 @@ const MobileApps = (props) => {
         >
           <Grid item>
             <Typography variant="h4" gutterBottom>
-              Extend Access
+              Ampliar el Acceso
             </Typography>
           </Grid>
           <Grid item>
@@ -244,7 +249,7 @@ const MobileApps = (props) => {
         <Grid item container direction="column" md alignItems="center">
           <Grid item>
             <Typography variant="h4" gutterBottom>
-              Increase Engagement
+              Aumentar el Compromiso
             </Typography>
           </Grid>
           <Grid item>
