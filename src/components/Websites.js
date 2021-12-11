@@ -116,9 +116,9 @@ export default function Websites(props) {
             <IconButton
               style={{ backgroundColor: "transparent" }}
               component={Link}
-              to="/services"
+              to="/course"
               onClick={() => {
-                setValue(1);
+                setSelectedIndex(3);
               }}
             >
               <img src={forwardArrow} alt="Forward to services" />
