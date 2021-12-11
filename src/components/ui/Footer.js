@@ -142,7 +142,7 @@ export default function Footer(props) {
                   setSelectedIndex(0);
                 }}
               >
-                Services
+                Servicios
               </Grid>
               <Grid
                 item
@@ -154,7 +154,7 @@ export default function Footer(props) {
                   setSelectedIndex(1);
                 }}
               >
-                Custom Software Development
+                Desarrollo de software a medida
               </Grid>
               <Grid
                 item
@@ -166,7 +166,7 @@ export default function Footer(props) {
                   setSelectedIndex(2);
                 }}
               >
-                iOS/Android App Development
+                Desarrollo iOS/Android
               </Grid>
               <Grid
                 item
@@ -178,7 +178,7 @@ export default function Footer(props) {
                   setSelectedIndex(3);
                 }}
               >
-                Website Development
+                Desarrollo Web
               </Grid>
             </Grid>
           </Grid>
@@ -193,7 +193,7 @@ export default function Footer(props) {
                   setValue(2);
                 }}
               >
-                The Revolution
+                La Revolución
               </Grid>
               <Grid
                 item
@@ -204,7 +204,7 @@ export default function Footer(props) {
                   setValue(2);
                 }}
               >
-                Vision
+                Visión
               </Grid>
               <Grid
                 item
@@ -215,7 +215,7 @@ export default function Footer(props) {
                   setValue(2);
                 }}
               >
-                Technology
+                Tecnología
               </Grid>
               <Grid
                 item
@@ -226,7 +226,7 @@ export default function Footer(props) {
                   setValue(2);
                 }}
               >
-                Process
+                Proceso
               </Grid>
             </Grid>
           </Grid>
@@ -241,7 +241,7 @@ export default function Footer(props) {
                   setValue(3);
                 }}
               >
-                About Us
+                Sobre nosotros
               </Grid>
               <Grid
                 item
@@ -252,7 +252,7 @@ export default function Footer(props) {
                   setValue(3);
                 }}
               >
-                History
+                Historia
               </Grid>
               <Grid
                 item
@@ -263,7 +263,7 @@ export default function Footer(props) {
                   setValue(3);
                 }}
               >
-                Team
+                Equipo
               </Grid>
             </Grid>
           </Grid>
@@ -278,7 +278,7 @@ export default function Footer(props) {
                   setValue(4);
                 }}
               >
-                Contact Us
+                Contáctanos
               </Grid>
             </Grid>
           </Grid>
