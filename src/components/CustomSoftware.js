@@ -133,30 +133,33 @@ const CustomSoftware = (props) => {
         >
           <Grid item>
             <Typography variant="h2" gutterBottom>
-              Custom Software Development
+              Desarrollo de software a medida
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              Weather we're replacing old software or inventing new solutions,
-              Amp Development is here to help you tackle technology
+              Ya sea que estemos reemplazando software antiguo o inventando
+              nuevas soluciones, Amp Development está aquí para ayudarle a
+              abordar la tecnología
             </Typography>
             <Typography variant="body1" paragraph>
-              Using commercial software leaves you with a lot of stuff you don't
-              need with some of the stuff you do need and ultimately controls
-              the way you work. Without using any software at all you risk
-              falling behind competitors and missing out on huge savings from
-              increased efficiency.
+              El uso de software comercial te deja un montón de cosas que no
+              necesitas con algunas de las que sí necesitas y, en todo caso,
+              controla tu forma de trabajar. Si no utilizas ningún tipo de
+              software, corres el riesgo de quedarte atrás con respecto a la
+              competencia y de perder el enorme ahorro que produce el aumento de
+              la eficiencia.
             </Typography>
             <Typography variant="body1" paragraph>
-              Our custom solutions are designed from the ground up with your
-              needs, wants and goals at the core. This collaborative process
-              produces finely tuned software that is much more effective at
-              improving your workflow and reducing costs than generalized
-              options.
+              Nuestras soluciones personalizadas se diseñan desde el principio
+              teniendo en cuenta tus necesidades, deseos y objetivos. Este
+              proceso de colaboración da como resultado un software
+              perfectamente ajustado que es mucho más eficaz para mejorar tu
+              flujo de trabajo y reducir los costes en comparación con las
+              opciones genéricas.
             </Typography>
             <Typography variant="body1" paragraph>
-              We create exactly what you want, exactly how you want it.
+              Creamos exactamente lo que quieres, exactamente como lo quieres.
             </Typography>
           </Grid>
         </Grid>
@@ -199,7 +202,7 @@ const CustomSoftware = (props) => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h2">Save Energy</Typography>
+            <Typography variant="h2">Ahórrate energía</Typography>
           </Grid>
           <Grid item>
             <img src={lightbulb} alt="Lightbulb" />
@@ -218,7 +221,7 @@ const CustomSoftware = (props) => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h2">Save Time</Typography>
+            <Typography variant="h2">Ahórrate tiempo</Typography>
           </Grid>
           <Grid item>
             <img src={stopwatch} alt="Stopwatch" />
@@ -233,7 +236,7 @@ const CustomSoftware = (props) => {
           alignItems="center"
         >
           <Grid item>
-            <Typography variant="h2">Save Money</Typography>
+            <Typography variant="h2">Ahórrate dinero</Typography>
           </Grid>
           <Grid item>
             <img src={cash} alt="Cash" />
@@ -266,26 +269,26 @@ const CustomSoftware = (props) => {
           >
             <Grid item>
               <Typography variant="h4" gutterBottom>
-                Digital Documents & Data
+                Documentos y datos digitales
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                Reduce Errors. Reduce Waste. Reduce Cost.
+                Reduzca los errores. Reduzca los residuos. Reduzca los costes.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                Billions are spent annually on the purchasing, printing and
-                distribution of paper. On top of the massive environmental
-                impact it has, it causes harm to your bottom line as well.
+                Cada año se gastan miles de millones en la compra, impresión y
+                distribución de papel. Además del enorme impacto ecológico que
+                tiene, también perjudica a su cuenta de resultados.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                By utilizing digital forms and documents you can reduce these
-                obsolete expenses, accelerate your communication and help the
-                Earth.
+                Utilizando formularios y documentos digitales puede reducir
+                estos gastos obsoletos, acelerar su comunicación y ayudar a el
+                planeta.
               </Typography>
             </Grid>
           </Grid>
@@ -322,14 +325,14 @@ const CustomSoftware = (props) => {
           >
             <Grid item>
               <Typography variant="h4" gutterBottom>
-                Scale
+                Escala
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                Weather you're a large brand, just getting started, or taking
-                off right now, our application architecture ensures pain-free
-                growth and reliability.
+                Ya sea una marca grande, que acaba de empezar o que está
+                despegando ahora mismo, nuestra arquitectura de aplicaciones
+                garantiza un crecimiento y una fiabilidad sin problemas.
               </Typography>
             </Grid>
           </Grid>
@@ -355,15 +358,16 @@ const CustomSoftware = (props) => {
           </Grid>
           <Grid item className={classes.itemContainer}>
             <Typography variant="h4" gutterBottom align="center">
-              Root Cause Analysis
+              Análisis de la causa raíz
             </Typography>
             <Typography variant="body1" paragraph align="center">
-              Many problems are merely symptoms of larger, underlying issues.
+              Muchos problemas no son más que síntomas de cuestiones más amplias
+              y subyacentes.
             </Typography>
             <Typography variant="body1" paragraph align="center">
-              We can help you thoroughly examine all areas of your business to
-              develop a holistic plan for the most effective implementation of
-              technology.
+              Podemos ayudarte a examinar a fondo todas las áreas de tu negocio
+              para desarrollar un plan holístico para la implementación más
+              efectiva de la tecnología.
             </Typography>
           </Grid>
         </Grid>
@@ -394,26 +398,27 @@ const CustomSoftware = (props) => {
           >
             <Grid item>
               <Typography variant="h4" gutterBottom>
-                Automation
+                Automatización
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                We can help you identify processes with time or event based
-                actions which can now be easily automated.
+                Podemos ayudarte a identificar procesos de acciones o eventos
+                que actualmente pueden ser fácilmente automatizados.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                Increasing efficiency increases profits leaving, you more time
-                to focus on your business, not busywork
+                El aumento de la eficiencia incrementa los beneficios y te deja
+                más tiempo para centrarte en tu negocio, no en el trabajo
+                pesado.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                By utilizing digital forms and documents you can reduce these
-                obsolete expenses, accelerate your communication and help the
-                Earth.
+                Utilizando formularios y documentos digitales puede reducir
+                estos gastos obsoletos, acelerar su comunicación y ayudar a la
+                Tierra.
               </Typography>
             </Grid>
           </Grid>
@@ -455,25 +460,26 @@ const CustomSoftware = (props) => {
           >
             <Grid item>
               <Typography variant="h4" gutterBottom>
-                User Experience Design
+                Diseño de la Experiencia de Usuario
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                A design that isn't usable isn't a good design.
+                Un diseño que no es amigable no es un buen diseño.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                So why are so many pieces of software complicated, confusing,
-                and frustrating?
+                Entonces, ¿por qué hay tantas piezas de software complicadas,
+                confusas y frustrantes?
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body1" paragraph>
-                By prioritizing users and the real ways they interact with
-                technology we're able to develop personable experiences that
-                solve problems rather than create new ones.
+                Si damos prioridad a los usuarios y a las formas reales en que
+                interactúan con la tecnología, podemos desarrollar experiencias
+                agradables que resuelvan los problemas en lugar de crear
+                problemas nuevos.
               </Typography>
             </Grid>
           </Grid>
