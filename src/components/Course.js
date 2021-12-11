@@ -178,7 +178,7 @@ const Course = (props) => {
           gutterBottom
           align={matchesMD ? "center" : undefined}
         >
-          What you'll learn
+          Lo que aprenderás
         </Typography>
 
         <Grid container direction="row">
