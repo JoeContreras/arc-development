@@ -64,7 +64,7 @@ export default function Revolution(props) {
         align={matchesMD ? "center" : undefined}
       >
         <Typography variant="h2" style={{ fontFamily: "Pacifico" }}>
-          The Revolution
+          La Revolución
         </Typography>
       </Grid>
       <Grid
@@ -97,38 +97,39 @@ export default function Revolution(props) {
         >
           <Grid item>
             <Typography variant="h4" gutterBottom>
-              Vision
+              Visión
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              The rise of computers and subsequently, the Internet, has
-              completely altered every aspect of human life. This has increased
-              our comfort, broadened our connections, and reshaped how we view
-              the world.
+              El florecimiento de los ordenadores y, posteriormente, de
+              Internet, ha alterado por completo todos los aspectos de la vida
+              humana. Ha aumentado nuestra comodidad, ha ampliado nuestras
+              conexiones y ha reconfigurado nuestra forma de ver el mundo.
             </Typography>
             <Typography variant="body1" paragraph>
-              What once was confined to huge rooms and teams of engineers now
-              resides in every single one of our hands. Harnessing this
-              unlimited potential by using it to solve problems and better lives
-              is at the heart of everything we do.
+              Lo que antes estaba confinado a enormes salas y equipos de
+              ingenieros, ahora reside en cada una de nuestras manos. Aprovechar
+              este potencial ilimitado utilizándolo para resolver problemas y
+              mejorar vidas es la esencia de todo lo que hacemos.
             </Typography>
             <Typography variant="body1" paragraph>
-              We want to help businesses capitalize on the latest and greatest
-              technology. The best way to predict the future is to be the one
-              building it and we want to help the world into this next chapter
-              of technological expansion, exploration, and innovation.
+              Queremos ayudar a las empresas a sacar partido de la última y
+              mejor tecnología. La mejor manera de predecir el futuro es ser
+              quien lo construye y queremos ayudar al mundo a entrar en este
+              próximo capítulo de expansión tecnológica, exploración e
+              innovación.
             </Typography>
             <Typography variant="body1" paragraph>
-              By holding ourselves to rigorous standards and pristine quality,
-              we can ensure you have the absolute best tools necessary to thrive
-              in this new frontier.
+              Si nos atenemos a unas normas rigurosas y a una calidad impecable,
+              podemos garantizar que usted disponga de las mejores herramientas
+              necesarias para prosperar en esta nueva frontera.
             </Typography>
             <Typography variant="body1" paragraph>
-              We see a future where every individual has personalized software
-              custom tailored to their lifestyle, culture, and interests,
-              helping them overcome life's obstacles. Each project is a step
-              towards that goal.
+              Vemos un futuro en el que cada persona tiene un software
+              personalizado adaptado a su estilo de vida, cultura e intereses,
+              que le ayuda a superar los obstáculos de la vida. Cada proyecto es
+              un paso hacia ese objetivo.
             </Typography>
           </Grid>
         </Grid>
@@ -152,49 +153,53 @@ export default function Revolution(props) {
         >
           <Grid item>
             <Typography variant="h4" gutterBottom>
-              Technology
+              Tecnología
             </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body1" paragraph>
-              In 2013, Facebook invented a new way of building websites. This
-              new system, React.js, completely revolutionizes the process and
-              practice of website development.
+              En 2013, Facebook inventó una nueva forma de construir sitios web.
+              Este nuevo sistema, React.js, revoluciona por completo el proceso
+              y la práctica del desarrollo de sitios web.
             </Typography>
             <Typography variant="body1" paragraph>
-              Instead of chaining together long individual pages, like
-              traditional websites, React websites are built with little chunks
-              of code called components. These components are faster, easier to
-              maintain, and are easily reused and customized, each serving a
-              singular purpose.
+              En lugar de encadenar largas páginas individuales, como los sitios
+              web tradicionales, los sitios web React se construyen con pequeños
+              trozos de código llamados componentes. Estos componentes son más
+              rápidos, más fáciles de mantener y son fácilmente reutilizables y
+              personalizables, sirviendo cada uno de ellos para un propósito
+              singular.
             </Typography>
             <Typography variant="body1" paragraph>
-              Two years later they shocked the world by releasing a similar
-              system, React Native, for producing iOS and Android apps. Instead
-              of having to master two completely separate development platforms,
-              you can leverage the knowledge you already possessed from building
-              websites and reapply it directly! This was a huge leap forward.
+              Dos años más tarde, sorprendieron al mundo lanzando un sistema
+              similar, React Native, para producir aplicaciones para iOS y
+              Android. En lugar de tener que dominar dos plataformas de
+              desarrollo completamente separadas, puedes aprovechar los
+              conocimientos que ya poseías de la construcción de sitios web y
+              reaplicarlos directamente. Esto fue un gran salto adelante.
             </Typography>
             <Typography variant="body1" paragraph>
-              This technology is now being used by companies like AirBnB,
-              Microsoft, Netflix, Pinterest, Skype, Tesla, UberEats, and when
-              Facebook purchased Instagram large portions of it were even
-              rebuilt using React.
+              Esta tecnología está siendo utilizada por empresas como AirBnB,
+              Microsoft, Netflix, Pinterest, Skype, Tesla, UberEats, y cuando
+              Facebook compró Instagram grandes partes de ella fueron incluso
+              reconstruidas usando React.
             </Typography>
             <Typography variant="body1" paragraph>
-              Developers have since built on top of these systems by automating
-              project setup and deployment, allowing creators to focus as much
-              as possible on their work itself.
+              Desde entonces, los desarrolladores han construido sobre estos
+              sistemas automatizando la configuración y el despliegue de los
+              proyectos, lo que permite a los creadores centrarse al máximo en
+              su propio trabajo.
             </Typography>
             <Typography variant="body1" paragraph>
-              These technical advancements translate into savings by
-              significantly reducing the workload and streamlining the workflow
-              for developing new pieces of software, while also lowering the
-              barrier to entry for mobile app development.
+              Estos avances técnicos se traducen en ahorros al reducir
+              significativamente la carga de trabajo y agilizar el flujo de
+              trabajo para el desarrollo de nuevas piezas de software, al tiempo
+              que se reduce la barrera de entrada para el desarrollo de
+              aplicaciones móviles.
             </Typography>
             <Typography variant="body1" paragraph>
-              This puts personalization in your pocket — faster, better, and
-              more affordable than ever before.
+              Esto pone la personalización en tu bolsillo: más rápido, mejor y
+              más asequible que nunca.
             </Typography>
           </Grid>
         </Grid>
@@ -233,27 +238,29 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#000", marginTop: "5em" }}
             >
-              Consultation
+              Consulta
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#33384B" }}>
-              Our process begins the moment you realize you need a piece of
-              technology for your business. Whether you already have an idea for
-              where to start and what to do, or if you just know you want to
-              step things up, our initial consultation will help you examine
-              your business holistically to find the best solutions.
+              Nuestro proceso comienza en el momento en que se da cuenta de que
+              necesita una pieza de tecnología para su negocio. Ya sea que tenga
+              una idea de por dónde empezar y qué hacer, o si simplemente sabe
+              que quiere dar un paso adelante, nuestra consulta inicial le
+              ayudará a examinar su negocio de forma exhaustiva para encontrar
+              las mejores soluciones.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#33384B" }}>
-              Detailed notes will be taken on your requirements and constraints,
-              while taking care to identify other potential areas for
-              consideration.
+              Se tomarán notas detalladas sobre sus necesidades y limitaciones,
+              al tiempo que se identifican otras áreas potenciales a tener en
+              cuenta.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#33384B" }}>
-              Cutting-edge advancements in machine learning like object
-              detection and natural language processing allow computers to do
-              things previously unimaginable, and our expertise and intuition
-              will help usher you into this new future of possibilities.
+              Los avances de vanguardia en el aprendizaje automático, como la
+              detección de objetos y el procesamiento del lenguaje natural,
+              permiten a los ordenadores hacer cosas antes inimaginables, y
+              nuestra experiencia e intuición le ayudarán a entrar en este nuevo
+              futuro de posibilidades
             </Typography>
           </Grid>
         </Grid>
@@ -293,18 +300,20 @@ export default function Revolution(props) {
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              After we settle on the best path forward and decide on a solution
-              to pursue, details like the cost and timeline will be finalized.
+              Una vez que hayamos decidido cuál es el mejor camino a seguir y la
+              solución a seguir, se finalizarán detalles como el coste y el
+              calendario.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Then it’s time for us to start on your minimum viable product.
-              That’s just a fancy term for a mockup, which doesn’t include
-              colors, images, or any other polished design elements, but
-              captures the essential layout structure and functionality.
+              Entonces es el momento de empezar a trabajar en su producto mínimo
+              viable. Esto es un término elegante para referirse a una maqueta,
+              que no incluye colores, imágenes ni ningún otro elemento de diseño
+              pulido, pero que capta la estructura esencial del diseño y la
+              funcionalidad.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              This helps us understand and refine the solution itself before
-              getting distracted by specifics and looks.
+              Esto nos ayuda a entender y refinar la solución en sí misma antes
+              de distraernos con detalles y apariencias.
             </Typography>
           </Grid>
         </Grid>
@@ -339,24 +348,24 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#000", marginTop: "5em" }}
             >
-              Review
+              Revisión
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#10301B" }}>
-              Before moving any farther we come back to you with our progress.
-              This gives you the freedom to discuss any changes you may want or
-              any ideas you may have come up with before any heavy lifting has
-              been done.
+              Antes de seguir avanzando, le comunicamos nuestros progresos. Esto
+              le da la libertad de discutir cualquier cambio que desee o
+              cualquier idea que se le ocurra antes de que se haya hecho
+              cualquier trabajo pesado.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#10301B" }}>
-              We give you an interactive demonstration of the mockups,
-              thoroughly explaining the thought process that went into each
-              screen and every anticipated feature.
+              Le hacemos una demostración interactiva de las maquetas y le
+              explicamos a fondo el proceso de reflexión que se ha llevado a
+              cabo en cada pantalla y en cada característica prevista.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#10301B" }}>
-              Once you’re completely satisfied with the vision for our solution
-              we get down to the nitty gritty, fine-details of design.
+              Una vez que esté completamente satisfecho con la visión de nuestra
+              solución, nos ponemos a trabajar en los detalles del diseño.
             </Typography>
           </Grid>
         </Grid>
@@ -391,20 +400,20 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#000", marginTop: "5em" }}
             >
-              Design
+              Diseño
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#000000" }}>
-              Using the mockups and notes taken during the consultation as
-              guides, we will start ironing out what the final product will look
-              like. This also involves using any brand material like fonts,
-              colors, and logos to extend the experience you’re already familiar
-              with.
+              Utilizando las maquetas y las notas tomadas durante la consulta
+              como guía, empezaremos a perfilar el aspecto del producto final.
+              Esto también implica el uso de cualquier material de marca, como
+              fuentes, colores y logotipos, para ampliar la experiencia con la
+              que ya está familiarizado.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#000000" }}>
-              No aspect is superfluous, and care will be taken with every
-              decision.
+              Ningún aspecto es innecesario, y se tendrá cuidado con cada
+              decisión.
             </Typography>
           </Grid>
         </Grid>
@@ -439,19 +448,19 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#112A46", marginTop: "5em" }}
             >
-              Review
+              Revisión
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#112A46" }}>
-              A second round of review is essential to our goal of creating
-              exactly what you want, exactly how you want it.
+              Una segunda ronda de revisión es esencial para nuestro objetivo de
+              crear exactamente lo que quieres, exactamente como lo quieres.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#112A46" }}>
-              This time we’ll be going over the finalized designs in another
-              fully interactive demonstration. Again this gives you an
-              opportunity to tweak things and make sure we get everything right
-              the first time.
+              Esta vez repasaremos los diseños finalizados en otra demostración
+              totalmente interactiva. Una vez más, esto le da la oportunidad de
+              ajustar las cosas y asegurarse de que lo hacemos todo bien a la
+              primera.
             </Typography>
           </Grid>
         </Grid>
@@ -486,37 +495,38 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#150000", marginTop: "5em" }}
             >
-              Build
+              Construcción
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "40em" }}>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Here’s where we get down to business.
+              Aquí es donde nos ponemos manos a la obra.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Engineering begins after your approval on the final designs. We
-              start by scaffolding out the project on a high level, prioritizing
-              some areas over others.
+              La ingeniería comienza tras su aprobación de los diseños finales.
+              Empezamos por estructurar el proyecto en un nivel alto, dando
+              prioridad a unas áreas sobre otras.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Each area is then developed in order of importance until ready to
-              be connected to the next piece.
+              A continuación, cada área se desarrolla por orden de importancia
+              hasta que esté lista para conectarse a la siguiente pieza.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Typically the backend, behind the scenes operations are completed
-              first. Once all the services are in place we can then create the
-              front end, user side of things.
+              Por lo general, el backend, las operaciones detrás de escena, se
+              completan primero. Una vez que todos los servicios están en su
+              sitio, podemos crear el front-end, la parte que se dirige al
+              usuario.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Finishing the application doesn’t mean we’re done though, because
-              we use extensive testing to guarantee compatibility with all
-              intended devices.
+              Sin embargo, terminar la aplicación no significa que hayamos
+              terminado, ya que realizamos pruebas exhaustivas para garantizar
+              la compatibilidad con todos los dispositivos previstos.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              Only after our rigorous examinations will we accept a product as
-              finished, then pushing it through the production pipeline. This
-              produces an optimized, compressed, consumer version of the code
-              and assets ready for deployment.
+              Sólo después de nuestros rigurosos exámenes aceptaremos un
+              producto como terminado, para luego empujarlo a través de la vía
+              de producción. Esto produce una versión optimizada, comprimida y
+              de consumo del código y los activos listos para su despliegue.
             </Typography>
           </Grid>
         </Grid>
@@ -554,24 +564,24 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#150000", marginTop: "5em" }}
             >
-              Launch
+              El Lanzamiento
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "30em" }}>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              The moment we’ve all been waiting for.
+              El momento que todos estábamos esperando.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              When construction comes to a close you’re the first one to know.
-              We’ll give our final demonstration to show off your shiny new
-              software in the wild so you know exactly how it will look to your
-              users.
+              Cuando la construcción llega a su fin, usted es el primero en
+              saberlo. Haremos una demostración final para mostrar su nuevo y
+              brillante software en la naturaleza para que sepa exactamente cómo
+              se verá a sus usuarios.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#150000" }}>
-              When you say the word, we press the button and launch your project
-              out to the public. We’re there to ensure everything goes to plan
-              so you can start reaping the rewards of your technological
-              investment immediately.
+              Cuando usted lo diga, pulsaremos el botón y lanzaremos su proyecto
+              al público. Estamos ahí para asegurarnos de que todo salga bien,
+              para que pueda empezar a recoger los frutos de su inversión
+              tecnológica de inmediato.
             </Typography>
           </Grid>
         </Grid>
@@ -607,23 +617,24 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#fff", marginTop: "5em" }}
             >
-              Maintain
+              Mantenimiento
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              Our work doesn’t end there.
+              Nuestro trabajo no termina ahí.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              After a successful launch we keep in close contact to listen to
-              feedback and hear how the project is being received.
+              Después de un lanzamiento exitoso nos mantenemos en comunicación
+              para escuchar los comentarios y saber cómo está siendo recibido el
+              proyecto.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              From there on out we make sure your application is kept up to date
-              and taking advantage of the best features and practices available.
-              When new developments arise or new techniques are discovered in
-              future projects, we will implement those advancements in your
-              project as part of our routine maintenance.
+              A partir de ahí, nos aseguramos de que su aplicación se mantenga
+              actualizada y aproveche las mejores características y prácticas
+              disponibles. Cuando surjan nuevos desarrollos o se descubran
+              nuevas técnicas en futuros proyectos, implementaremos esos avances
+              en su proyecto como parte de nuestro mantenimiento rutinario.
             </Typography>
           </Grid>
         </Grid>
@@ -661,25 +672,26 @@ export default function Revolution(props) {
               gutterBottom
               style={{ color: "#fff", marginTop: "5em" }}
             >
-              Iterate
+              Iterar
             </Typography>
           </Grid>
           <Grid item style={{ maxWidth: "20em" }}>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              The cycle repeats whenever you come up with a new idea for
-              extending your current project, or come up with a brand new system
-              entirely.
+              El ciclo se repite cada vez que se le ocurre una nueva idea para
+              ampliar su proyecto actual o para crear un sistema completamente
+              nuevo.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              By planning for future features and changes we can build and
-              evolve your application over time. As new use cases and customer
-              needs develop we can respond with continuous integration of new
-              content.
+              Al planificar las características y los cambios futuros, podemos
+              construir y hacer evolucionar su aplicación a lo largo del tiempo.
+              A medida que se desarrollan nuevos casos de uso y necesidades de
+              los clientes, podemos responder con la integración continua de
+              nuevos contenidos.
             </Typography>
             <Typography variant="body1" paragraph style={{ color: "#fff" }}>
-              Our iterative process will keep you current and competitive,
-              allowing you to quickly implement changes instead of waiting
-              months for a single update.
+              Nuestro proceso iterativo le mantendrá al día y competitivo,
+              permitiéndole implementar rápidamente los cambios en lugar de
+              esperar meses para una única actualización.
             </Typography>
           </Grid>
         </Grid>
