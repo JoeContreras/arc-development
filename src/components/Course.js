@@ -456,6 +456,18 @@ const Course = (props) => {
           </Grid>
           <Grid item>
             <Button
+              variant="contained"
+              size="large"
+              fullWidth
+              color="secondary"
+              href="https://saul2000.itch.io/gla"
+              target="_blank"
+            >
+              Probar el juego de ejemplo
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button
               variant="outlined"
               size="large"
               fullWidth

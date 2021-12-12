@@ -790,7 +790,7 @@ const Estimate = () => {
       setContact(initialState);
       setAlert({
         open: true,
-        message: "Estimate sent successfully",
+        message: "Su estimado se ha enviado.",
         backgroundColor: "#4BB543",
       });
       setDialogOpen(false);
@@ -801,7 +801,7 @@ const Estimate = () => {
       setLoading(false);
       setAlert({
         open: true,
-        message: "Something went wrong, please try again",
+        message: "Algo salio mal, porfavor intenta de nuevo",
         backgroundColor: "#FF3232",
       });
     }
@@ -1060,7 +1060,7 @@ const Estimate = () => {
           style={{ marginTop: "2em", marginLeft: matchesMD ? 0 : "2em" }}
           align={matchesMD ? "center" : undefined}
         >
-          <Typography variant="h2">Estimate</Typography>
+          <Typography variant="h2">Estimado</Typography>
         </Grid>
         <Grid
           item
@@ -1191,7 +1191,7 @@ const Estimate = () => {
               getCategory();
             }}
           >
-            Get Estimate
+            Obtener Estimado
           </Button>
         </Grid>
       </Grid>
