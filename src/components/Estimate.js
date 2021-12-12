@@ -1,4 +1,4 @@
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   Button,
   CircularProgress,
@@ -80,12 +80,12 @@ const useStyles = makeStyles((theme) => ({
 const defaultQuestions = [
   {
     id: 1,
-    title: "Which service are you interested in?",
+    title: "¿Qué servicio le interesa?",
     active: true,
     options: [
       {
         id: 1,
-        title: "Custom Software Development",
+        title: "Desarrollo de Software a Medida",
         subtitle: null,
         icon: software,
         iconAlt: "three floating screens",
@@ -94,7 +94,7 @@ const defaultQuestions = [
       },
       {
         id: 2,
-        title: "iOS/Android App Development",
+        title: "Desarrollo iOS/Android",
         subtitle: null,
         icon: mobile,
         iconAlt: "outlines of phones and tablets",
@@ -103,7 +103,7 @@ const defaultQuestions = [
       },
       {
         id: 3,
-        title: "Website Development",
+        title: "Desarrollo Web",
         subtitle: null,
         icon: website,
         iconAlt: "computer outline",
@@ -118,12 +118,12 @@ const softwareQuestions = [
   { ...defaultQuestions[0], active: false },
   {
     id: 2,
-    title: "Which platforms do you need supported?",
-    subtitle: "Select all that apply.",
+    title: "¿Qué plataformas necesita soportar?",
+    subtitle: "Seleccione las opciones que apliquen.",
     options: [
       {
         id: 1,
-        title: "Web Application",
+        title: "Aplicación Web",
         subtitle: null,
         icon: website,
         iconAlt: "computer outline",
@@ -132,7 +132,7 @@ const softwareQuestions = [
       },
       {
         id: 2,
-        title: "iOS Application",
+        title: "Aplicación iOS",
         subtitle: null,
         icon: iphone,
         iconAlt: "outline of iphone",
@@ -141,7 +141,7 @@ const softwareQuestions = [
       },
       {
         id: 3,
-        title: "Android Application",
+        title: "Aplicación Android",
         subtitle: null,
         icon: android,
         iconAlt: "outlines of android phone",
@@ -153,12 +153,12 @@ const softwareQuestions = [
   },
   {
     id: 3,
-    title: "Which features do you expect to use?",
-    subtitle: "Select all that apply.",
+    title: "¿Qué funciones espera utilizar?",
+    subtitle: "Seleccione las opciones que apliquen.",
     options: [
       {
         id: 1,
-        title: "Photo/Video",
+        title: "Fotos/Video",
         subtitle: null,
         icon: camara,
         iconAlt: "camera outline",
@@ -176,7 +176,7 @@ const softwareQuestions = [
       },
       {
         id: 3,
-        title: "File Transfer",
+        title: "Transferencia de Archivos",
         subtitle: null,
         icon: upload,
         iconAlt: "outline of cloud with arrow pointing up",
@@ -188,12 +188,12 @@ const softwareQuestions = [
   },
   {
     id: 4,
-    title: "Which features do you expect to use?",
-    subtitle: "Select all that apply.",
+    title: "¿Qué funciones espera utilizar?",
+    subtitle: "Seleccione las opciones que apliquen.",
     options: [
       {
         id: 1,
-        title: "Users/Authentication",
+        title: "Usuarios/Autenticación",
         subtitle: null,
         icon: users,
         iconAlt: "outline of a person with a plus sign",
@@ -202,7 +202,7 @@ const softwareQuestions = [
       },
       {
         id: 2,
-        title: "Biometrics",
+        title: "Datos Biométricos",
         subtitle: null,
         icon: biometrics,
         iconAlt: "fingerprint",
@@ -211,7 +211,7 @@ const softwareQuestions = [
       },
       {
         id: 3,
-        title: "Push Notifications",
+        title: "Notificaciones Push",
         subtitle: null,
         icon: bell,
         iconAlt: "outline of a bell",
@@ -223,13 +223,13 @@ const softwareQuestions = [
   },
   {
     id: 5,
-    title: "What type of custom features do you expect to need?",
-    subtitle: "Select one.",
+    title: "¿Qué tipo de funciones personalizadas necesita?",
+    subtitle: "Selecciona una.",
     options: [
       {
         id: 1,
-        title: "Low Complexity",
-        subtitle: "(Informational)",
+        title: "Baja Complejidad",
+        subtitle: "(Informativo)",
         icon: info,
         iconAlt: "'i' inside a circle",
         selected: false,
@@ -237,8 +237,8 @@ const softwareQuestions = [
       },
       {
         id: 2,
-        title: "Medium Complexity",
-        subtitle: "(Interactive, Customizable, Realtime)",
+        title: "Complejidad Media",
+        subtitle: "(Interactivo, Personalizable, Tiempo real)",
         icon: customized,
         iconAlt: "two toggle switches",
         selected: false,
@@ -246,8 +246,8 @@ const softwareQuestions = [
       },
       {
         id: 3,
-        title: "High Complexity",
-        subtitle: "(Data Modeling and Computation)",
+        title: "Alta Complejidad",
+        subtitle: "(Modelado y cálculo de datos)",
         icon: data,
         iconAlt: "outline of line graph",
         selected: false,
@@ -258,8 +258,8 @@ const softwareQuestions = [
   },
   {
     id: 6,
-    title: "How many users do you expect?",
-    subtitle: "Select one.",
+    title: "¿Cuántos usuarios espera?",
+    subtitle: "Selecciona una.",
     options: [
       {
         id: 1,
@@ -297,13 +297,13 @@ const websiteQuestions = [
   { ...defaultQuestions[0], active: false },
   {
     id: 2,
-    title: "Which type of website are you wanting?",
-    subtitle: "Select one.",
+    title: "¿Qué tipo de sitio web desea?",
+    subtitle: "Selecciona una.",
     options: [
       {
         id: 1,
-        title: "Basic",
-        subtitle: "(Informational)",
+        title: "Básico",
+        subtitle: "(Informativo)",
         icon: info,
         iconAlt: "person outline",
         selected: false,
@@ -311,8 +311,8 @@ const websiteQuestions = [
       },
       {
         id: 2,
-        title: "Interactive",
-        subtitle: "(Users, API's, Messaging)",
+        title: "Interactivo",
+        subtitle: "(Usuarios, API's, Mensajería)",
         icon: customized,
         iconAlt: "outline of two people",
         selected: false,
@@ -321,7 +321,7 @@ const websiteQuestions = [
       {
         id: 3,
         title: "E-Commerce",
-        subtitle: "(Sales)",
+        subtitle: "(Ventas)",
         icon: globe,
         iconAlt: "outline of three people",
         selected: false,
@@ -463,7 +463,7 @@ const Estimate = () => {
       (option) => option.selected
     );
     switch (currentlyActive[0].subtitle) {
-      case "Select one.":
+      case "Selecciona una.":
         if (previousSelected[0]) {
           previousSelected[0].selected = !previousSelected[0].selected;
         }
@@ -499,7 +499,7 @@ const Estimate = () => {
         //Updating the state to use software questions
         setQuestions(newQuestions);
 */
-      case "Custom Software Development":
+      case "Desarrollo de Software a Medida":
         if (matchesSM) {
           window.scrollTo(0, myRef.current.offsetTop + 75);
         }
@@ -511,7 +511,7 @@ const Estimate = () => {
         setUsers("");
         setCategory("");
         break;
-      case "iOS/Android App Development":
+      case "Desarrollo iOS/Android":
         if (matchesSM) {
           window.scrollTo(0, myRef.current.offsetTop + 75);
         }
@@ -523,7 +523,7 @@ const Estimate = () => {
         setUsers("");
         setCategory("");
         break;
-      case "Website Development":
+      case "Desarrollo Web":
         if (matchesSM) {
           window.scrollTo(0, myRef.current.offsetTop + 75);
         }
@@ -548,7 +548,10 @@ const Estimate = () => {
     switch (e.target.name) {
       case "email":
         if (!isEmail(value)) {
-          setError({ ...error, emailError: "Please enter a valid Email" });
+          setError({
+            ...error,
+            emailError: "Porfavor introduzca un Email Valido",
+          });
         } else {
           setError({ ...error, emailError: "" });
         }
@@ -557,7 +560,7 @@ const Estimate = () => {
         if (!isPhone(value)) {
           setError({
             ...error,
-            phoneError: "Please enter a valid Phone Number",
+            phoneError: "Porfavor introduzca un Numero de Telefono Valido",
           });
         } else {
           setError({ ...error, phoneError: "" });
@@ -579,9 +582,7 @@ const Estimate = () => {
 
     if (questions.length > 2) {
       const userCost = questions
-        .filter(
-          (question) => question.title === "How many users do you expect?"
-        )
+        .filter((question) => question.title === "¿Cuántos usuarios espera?")
         .map((question) =>
           question.options.filter((option) => option.selected)
         )[0][0];
@@ -601,8 +602,7 @@ const Estimate = () => {
 
       questions
         .filter(
-          (question) =>
-            question.title === "Which platforms do you need supported?"
+          (question) => question.title === "¿Qué plataformas necesita soportar?"
         )
         .map((question) =>
           question.options.filter((option) => option.selected)
@@ -619,8 +619,7 @@ const Estimate = () => {
 
       questions
         .filter(
-          (question) =>
-            question.title === "Which features do you expect to use?"
+          (question) => question.title === "¿Qué funciones espera utilizar?"
         )
         .map((question) => question.options.filter((option) => option.selected))
         .map((option) =>
@@ -636,8 +635,7 @@ const Estimate = () => {
       const newCustomFeatures = questions
         .filter(
           (question) =>
-            question.title ===
-            "What type of custom features do you expect to need?"
+            question.title === "¿Qué tipo de funciones personalizadas necesita?"
         )
         .map((question) =>
           question.options.filter((option) => option.selected)
@@ -651,8 +649,7 @@ const Estimate = () => {
     if (questions.length === 2) {
       const newCategory = questions
         .filter(
-          (question) =>
-            question.title === "Which type of website are you wanting?"
+          (question) => question.title === "¿Qué tipo de sitio web desea?"
         )[0]
         .options.filter((option) => option.selected)[0].title;
 
@@ -697,13 +694,13 @@ const Estimate = () => {
       const newComplexity = (comp) => {
         let newComp;
         switch (comp) {
-          case "Low Complexity":
+          case "Baja complejidad":
             newComp = "Low";
             break;
-          case "Medium Complexity":
+          case "Complejidad Media":
             newComp = "Medium";
             break;
-          case "High Complexity":
+          case "Alta Complejidad":
             newComp = "High";
             break;
           default:
@@ -716,13 +713,13 @@ const Estimate = () => {
       const newService = (oldService) => {
         let newServ;
         switch (oldService) {
-          case "Custom Software Development":
+          case "Desarrollo de Software a Medida":
             newServ = "Custom Software";
             break;
-          case "iOS/Android App Development":
+          case "Desarrollo iOS/Android":
             newServ = "Mobile App";
             break;
-          case "Website Development":
+          case "Desarrollo Web":
             newServ = "Website";
             break;
           default:
@@ -736,13 +733,13 @@ const Estimate = () => {
         const newP = oldPlatforms.map((plat) => {
           let newPlat;
           switch (plat) {
-            case "Web Application":
+            case "Aplicación Web":
               newPlat = "Web";
               break;
-            case "iOS Application":
+            case "Aplicación iOS":
               newPlat = "iOS";
               break;
-            case "Android Application":
+            case "Aplicación Android":
               newPlat = "Android";
               break;
             default:
@@ -768,14 +765,27 @@ const Estimate = () => {
           name: name,
           date: format(date, "MM/dd/yy"),
           service: realService,
-          features: service === "Website" ? category : features.join(", "),
-          complexity: service === "Website" ? "N/A" : realComplexity,
-          platforms: service === "Website" ? "N/A" : realPlatforms.join(", "),
-          users: service === "Website" ? "N/A" : users,
+          features: realService === "Website" ? category : features.join(", "),
+          complexity: realService === "Website" ? "N/A" : realComplexity,
+          platforms:
+            realService === "Website" ? "N/A" : realPlatforms.join(", "),
+          users: realService === "Website" ? "N/A" : users,
           total: `$${total}`,
         }
       );
 
+      /*
+      const insertRes= {
+            name: name,
+            date: format(date, "MM/dd/yy"),
+            service: realService,
+            features: service === "Website" ? category : features.join(", "),
+            complexity: service === "Website" ? "N/A" : realComplexity,
+            platforms: service === "Website" ? "N/A" : realPlatforms.join(", "),
+            users: service === "Website" ? "N/A" : users,
+            total: `$${total}`,
+          }
+*/
       setLoading(false);
       setContact(initialState);
       setAlert({
@@ -886,14 +896,14 @@ const Estimate = () => {
 
     const emptySelections = questions
       .filter(
-        (question) => question.title !== "Which features do you expect to use?"
+        (question) => question.title !== "¿Qué funciones espera utilizar?"
       )
       .map((question) => question.options.filter((option) => option.selected))
       .filter((question) => question.length === 0);
 
     const featuresSelected = questions
       .filter(
-        (question) => question.title === "Which features do you expect to use?"
+        (question) => question.title === "¿Qué funciones espera utilizar?"
       )
       .map((question) => question.options.filter((option) => option.selected))
       .filter((selection) => selection.length > 0);
@@ -923,31 +933,31 @@ const Estimate = () => {
         </Grid>
         <Grid item xs={10}>
           <Typography variant="body1">
-            {`You want ${service} `}
+            {`Tu quieres un ${service} `}
             {platforms.length > 0
-              ? `for ${
+              ? `para ${
                   //if only web application is selected...
-                  platforms.indexOf("Web Application") > -1 &&
+                  platforms.indexOf("Aplicación Web") > -1 &&
                   platforms.length === 1
                     ? //then finish sentence here
-                      "a Web Application."
+                      "una Aplicación Web."
                     : //otherwise, if web application and another platform is selected...
-                    platforms.indexOf("Web Application") > -1 &&
+                    platforms.indexOf("Aplicación Web") > -1 &&
                       platforms.length === 2
                     ? //then finish the sentence here
-                      `a Web Application and an ${platforms[1]}.`
+                      `una Aplicación Web y una ${platforms[1]}.`
                     : //otherwise, if only one platform is selected which isn't web application...
                     platforms.length === 1
                     ? //then finish the sentence here
-                      `an ${platforms[0]}`
+                      `una ${platforms[0]}`
                     : //otherwise, if other two options are selected...
                     platforms.length === 2
                     ? //then finish the sentence here
-                      "an iOS Application and an Android Application."
+                      "una Aplicación iOS y una Aplicación Android."
                     : //otherwise if all three are selected...
                     platforms.length === 3
                     ? //then finish the sentence here
-                      "a Web Application, an iOS Application, and an Android Application."
+                      "una Aplicación Web, una Aplicación iOS, y una Aplicación Android."
                     : null
                 }`
               : null}
@@ -965,7 +975,7 @@ const Estimate = () => {
         </Grid>
         <Grid item xs={10}>
           <Typography variant="body1">
-            {"with "}
+            {"Con "}
             {/* if we have features... */}
             {features.length > 0
               ? //...and there's only 1...
@@ -989,7 +999,7 @@ const Estimate = () => {
             features.length !== 1 &&
             features.length !== 2
               ? //...and then finally add the last feature with 'and' in front of it
-                ` and ${features[features.length - 1]}.`
+                ` y ${features[features.length - 1]}.`
               : null}
           </Typography>
         </Grid>
@@ -1000,7 +1010,7 @@ const Estimate = () => {
         </Grid>
         <Grid item xs={10}>
           <Typography variant="body1">
-            {`The custom features will be of ${customFeatures.toLowerCase()}, and the project will be used by about ${users} users.`}
+            {`Las funciones personalizadas serán de ${customFeatures.toLowerCase()}, y el proyecto será usado por alrededor de ${users} usuarios.`}
           </Typography>
         </Grid>
       </Grid>
@@ -1015,17 +1025,17 @@ const Estimate = () => {
         </Grid>
         <Grid item xs={10}>
           <Typography variant="body1">
-            You want{" "}
-            {category === "Basic"
-              ? "a Basic website."
-              : `an ${category} Website.`}
+            Usted quiere{" "}
+            {category === "Básico"
+              ? "un sitio web básico."
+              : `un sitio web ${category}.`}
           </Typography>
         </Grid>
       </Grid>
     </Grid>
   );
 
-/*
+  /*
   function ScrollToTopOnMount() {
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -1196,7 +1206,7 @@ const Estimate = () => {
         <Grid container justifyContent="center">
           <Grid item style={{ marginTop: "1em", marginBottom: "1em" }}>
             <Typography variant="h2" align="center">
-              Estimate
+              Estimado
             </Typography>
           </Grid>
         </Grid>
@@ -1216,7 +1226,7 @@ const Estimate = () => {
             >
               <Grid item style={{ marginBottom: "0.5em" }}>
                 <TextField
-                  label="Name"
+                  label="Nombre"
                   id="name"
                   name="name"
                   value={name}
@@ -1238,7 +1248,7 @@ const Estimate = () => {
               </Grid>
               <Grid item style={{ marginBottom: "0.5em" }}>
                 <TextField
-                  label="Phone"
+                  label="Telefono"
                   name="phone"
                   id="phone"
                   fullWidth
@@ -1257,7 +1267,7 @@ const Estimate = () => {
                   onChange={handleChangeInput}
                   fullWidth
                   multiline
-                  placeholder="Tell us more about your project."
+                  placeholder="Cuéntanos más sobre el proyecto que tienes en mente."
                   rows={10}
                   className={classes.message}
                   InputProps={{ disableUnderline: true }}
@@ -1265,14 +1275,15 @@ const Estimate = () => {
               </Grid>
               <Grid item align={matchesSM ? "center" : undefined}>
                 <Typography variant="body1" paragraph>
-                  We can create this digital solution for an estimated{" "}
+                  Podemos crear esta solución digital por un precio estimado de{" "}
                   <span className={classes.specialText}>
                     ${total.toFixed(2)}
                   </span>
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  Fill out your name, email and phone number, place your request
-                  and we'll get back to you moving forward and a final price.
+                  Introduzca sus datos de contacto, haga su solicitud y nos
+                  pondremos en contacto con usted para informarle del precio
+                  final.
                 </Typography>
               </Grid>
             </Grid>
