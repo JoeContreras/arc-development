@@ -268,7 +268,7 @@ const softwareQuestions = [
         icon: person,
         iconAlt: "person outline",
         selected: false,
-        cost: 1,
+        cost: 100,
       },
       {
         id: 2,
@@ -277,7 +277,7 @@ const softwareQuestions = [
         icon: persons,
         iconAlt: "outline of two people",
         selected: false,
-        cost: 1.25,
+        cost: 125,
       },
       {
         id: 3,
@@ -286,7 +286,7 @@ const softwareQuestions = [
         icon: people,
         iconAlt: "outline of three people",
         selected: false,
-        cost: 1.5,
+        cost: 150,
       },
     ],
     active: false,
@@ -307,7 +307,7 @@ const websiteQuestions = [
         icon: info,
         iconAlt: "person outline",
         selected: false,
-        cost: 100,
+        cost: 10000,
       },
       {
         id: 2,
@@ -316,7 +316,7 @@ const websiteQuestions = [
         icon: customized,
         iconAlt: "outline of two people",
         selected: false,
-        cost: 200,
+        cost: 20000,
       },
       {
         id: 3,
@@ -325,7 +325,7 @@ const websiteQuestions = [
         icon: globe,
         iconAlt: "outline of three people",
         selected: false,
-        cost: 250,
+        cost: 25000,
       },
     ],
     active: true,
@@ -373,7 +373,7 @@ const Estimate = () => {
   const { phoneError, emailError } = error;
 
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: false,
     animationData: estimateAnimation,
     rendererSettings: {
@@ -1070,7 +1070,12 @@ const Estimate = () => {
             marginTop: "7.5em",
           }}
         >
-          <Lottie options={defaultOptions} height="100%" width="100%" />
+          <Lottie
+            options={defaultOptions}
+            height="100%"
+            width="100%"
+            isPaused={true}
+          />
         </Grid>
       </Grid>
       <Grid
