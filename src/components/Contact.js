@@ -126,7 +126,10 @@ const Contact = (props) => {
     switch (e.target.name) {
       case "email":
         if (!isEmail(value)) {
-          setError({ ...error, emailError: "Please enter a valid Email" });
+          setError({
+            ...error,
+            emailError: "Por favor, introduzca un email válido",
+          });
         } else {
           setError({ ...error, emailError: "" });
         }
@@ -135,7 +138,7 @@ const Contact = (props) => {
         if (!isPhone(value)) {
           setError({
             ...error,
-            phoneError: "Please enter a valid Phone Number",
+            phoneError: "Por favor, introduzca un numero de telefono válido",
           });
         } else {
           setError({ ...error, phoneError: "" });
@@ -162,7 +165,7 @@ const Contact = (props) => {
       setContact(initialState);
       setAlert({
         open: true,
-        message: "Message sent successfully",
+        message: "Mensaje enviado con éxito",
         backgroundColor: "#4BB543",
       });
     } catch (e) {
@@ -170,7 +173,7 @@ const Contact = (props) => {
       setLoading(false);
       setAlert({
         open: true,
-        message: "Something went wrong, please try again",
+        message: "Algo salió mal, por favor inténtelo de nuevo",
         backgroundColor: "#FF3232",
       });
     }
@@ -380,13 +383,13 @@ const Contact = (props) => {
           <Grid container direction="column" align="center">
             <Grid item>
               <Typography variant="h4" gutterBottom>
-                Confirm Message
+                Confirmar Mensaje
               </Typography>
             </Grid>
 
             <Grid item style={{ marginBottom: "0.5em" }}>
               <TextField
-                label="Name"
+                label="Nombre"
                 id="name"
                 name="name"
                 value={name}
@@ -408,7 +411,7 @@ const Contact = (props) => {
             </Grid>
             <Grid item style={{ marginBottom: "0.5em" }}>
               <TextField
-                label="Phone"
+                label="Telefono"
                 name="phone"
                 id="phone"
                 fullWidth
