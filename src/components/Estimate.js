@@ -373,8 +373,8 @@ const Estimate = () => {
   const { phoneError, emailError } = error;
 
   const defaultOptions = {
-    loop: false,
-    autoplay: false,
+    loop: true,
+    autoplay: true,
     animationData: estimateAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -1070,12 +1070,7 @@ const Estimate = () => {
             marginTop: "7.5em",
           }}
         >
-          <Lottie
-            options={defaultOptions}
-            height="100%"
-            width="100%"
-            isPaused={true}
-          />
+          <Lottie options={defaultOptions} height="100%" width="100%" />
         </Grid>
       </Grid>
       <Grid
